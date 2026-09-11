@@ -59,7 +59,7 @@ second label means exactly what it says: stated precisely enough to be attacked,
 cusp analysis, variation profiles, and self-similarity. **The problem is open and these are
 bounds and profiles, not a closure.**
 
-## What is not claimed
+## Scope
 
 None of this closes an Erdos problem. The closure result is a statement about a **typed derivation
 system reaching its own fixed point**, not about mathematics running out. The 889 theorems are
