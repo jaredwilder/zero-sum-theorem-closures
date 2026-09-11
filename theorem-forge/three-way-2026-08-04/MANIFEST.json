@@ -1,0 +1,218 @@
+{
+  "content_hash": "ccb3eb40eabbe324a54253e45afd8d550b80802db2e83f9b855287ccac57e74a",
+  "control_generated": 9,
+  "files": {
+    "ATTACK-QUEUE.json": "3abb8b82bdc2509575b4cbd52a0136db7611e096088e48145d88992f4072266e",
+    "BACK-TRANSFER-QUEUE.json": "08523b3b8a3e93d72f0c1e97fa2b466d359b5b8cb4519453b8a7d63a23c4d060",
+    "CAUSAL-ABLATION.json": "06a5d37dd6858d807ebd2df0f8c50063031a29c6a2702d3e1e782b2dc7ee3b74",
+    "CLEAN-PROCESS-REPLAY.json": "22bc609aed8620a99ed6f403f4f0ba432b89bb13262b0b800e48e9fd7a556e06",
+    "CLOSE-PROGRAMS.json": "0740ae049c45f8d1af7573acc8b6c895a747d435b32d51872b679a0cae580da6",
+    "CONTROL-SUMMARY.json": "4ad9447856427bca8e201d740b0c679d57a6c082b440f875526a145411c99d67",
+    "FINAL-VERIFICATION.json": "3fe51bd1389cea8edad513e7ca866b57059b2267c3012c74c36705b4570f3bcd",
+    "FINITE-MATH-VERIFICATION.json": "59b1bce34212b7ef6fee47b26b36123b3c29e7932c5ae148ba9a270c0eb42072",
+    "HOSTILE-VERIFICATION.json": "f8c7907d7bf9f760d010c6c14ce9a1a58b67b74e568ff2f0bd492e9b2367da9f",
+    "LEAN-MISSIONS.jsonl": "171e8d68e1e67da1b93a6e344c0720c5ba01aed5eed9ff7828657477b65dc5f8",
+    "NOVELTY-MISSIONS.jsonl": "b5b845af4bde07295faf9227974bef414a1ffe72119c6970c6713c6786a9db61",
+    "PROVE-SYSTEM-RECEIPT.txt": "21ad298761da949cf647b4d821b90faf95c99534a0d39843472f7130c81b81f0",
+    "RECURSIVE-THEOREM-BANK.md": "502ac56c3e51808f5d32277baf2518a3f8f4e4781a544f213cbf3e459c8eb4ef",
+    "RECURSIVE-THEOREM-CARDS.jsonl": "065861f00c948e7d80352da772c56e0898e013318652c9cce131da74db5af36a",
+    "REPLAY-VERIFICATION.json": "886c141c58ccbe6a41be397dd4c6b31eb69a0ec13855ebb7d628cf52a24cc79e",
+    "ROUND-RECEIPTS.json": "bd7d476cba7c8c089f406a712224125ba12eb03203dec9aa62b8d59240273e42",
+    "RUNBOOK.md": "c1d8e719d92236e863c052b90d40710361e55d2ea163e09d97fcfbd194749369",
+    "THREE-WAY-RECURSIVE-THEOREM-FORGE-REPORT.md": "1ba2c9c1ed5e5310ad6b1efa8bdbf13a410a3c0d067d79b1b072d968a688a367",
+    "TREATMENT-SUMMARY.json": "6a513451f6a250b750707cd8ea723f906203caad325d52930cb63be4b06e02b3",
+    "UNIFIED-CLAIM-BANK.jsonl": "b02671c95fd2f9a93062118fa070725ebb347bd8790b331440b7da2ae3b30eda",
+    "UNIT-TEST-RECEIPT.txt": "433a217694f168a86f84651b699c07c4e60196596b1e93150f39aceac4a1d431",
+    "materialize_outputs.py": "806dbb23747c21bf5a4ec1a0f991f38c3d954f3485eb21d5f24094d0a6b19334",
+    "prove_system.sh": "2b48da5730c1d142065f71eb935ccc85295a570f35b876649a9bf8abc3603ef0",
+    "test_three_way_forge.py": "7e68a59d21fc15a06a1eec6e41f377b3f505a6c7cada8f0a193caec4357ad924",
+    "three_way_forge.py": "b4d4070b9defd483d9bce174e92d91a0c27dba9a5c4bac108738c9c7c37fd139",
+    "verify_three_way_forge.py": "38ee51c9a543cb158c5cccc30c376721c90fbb7fef5e23fdab95eff621630d10"
+  },
+  "flagship_closed": false,
+  "novelty_claimed": false,
+  "parsed_source_counts": {
+    "595": 65,
+    "738": 62,
+    "cross": 47,
+    "total": 174
+  },
+  "recursive_gain": 23,
+  "schema": "oracle.three-way-recursive-forge.manifest.v1",
+  "source_hashes": {
+    "595": "f3f32d66ffea4ae56d61b12fae5ba0043a93985469267ae16f4925f7fe016d7a",
+    "738": "95997a5669de4860de47431e769de00d5fb68a00e5f01b4c3bb8a38f9b5391ad",
+    "cross": "e89d49180b7ebcbdcfd70c472ba095d7bdc2f61e38374b43462419cc0d149705"
+  },
+  "summary": {
+    "back_transfer_counts": {
+      "595": 23,
+      "738": 21,
+      "HYBRID": 32
+    },
+    "close_programs": {
+      "CLOSE-595": {
+        "resolved": 2,
+        "resolved_by": {
+          "common_omitted_edge_structure": "R:R3-COMMONBOOK",
+          "maximal_layer_edge_certificates": "R:R2-STABLECERT"
+        },
+        "target": "Erdos #595",
+        "unresolved": [
+          "page_profile_canonization",
+          "countable_maximal_layer_basis",
+          "multi_link_multi_book_interaction"
+        ]
+      },
+      "CLOSE-738": {
+        "resolved": 1,
+        "resolved_by": {
+          "signature_fiber_control": "R:R1-K4FIBER"
+        },
+        "target": "Erdos #738",
+        "unresolved": [
+          "cross_fiber_gluing",
+          "two_layer_purification",
+          "finite_layer_recurrence",
+          "combined_state_classification"
+        ]
+      },
+      "CLOSE-HYBRID": {
+        "resolved": 2,
+        "resolved_by": {
+          "layer_defect_descent": "X:XLAYER04",
+          "signature_fiber_descent": "R:R1-SIGDESC"
+        },
+        "target": "Finite-layer induced-tree hierarchy",
+        "unresolved": [
+          "cross_fiber_gluing",
+          "finite_layer_recurrence",
+          "combined_state_classification"
+        ]
+      }
+    },
+    "generated_claims": 32,
+    "retracted": [],
+    "rounds": [
+      {
+        "close_unresolved_after": {
+          "CLOSE-595": 5,
+          "CLOSE-738": 4,
+          "CLOSE-HYBRID": 3
+        },
+        "close_unresolved_before": {
+          "CLOSE-595": 5,
+          "CLOSE-738": 5,
+          "CLOSE-HYBRID": 5
+        },
+        "content_hash": "0f6fe60d974c5aa5df985e729a5d20426c21b18e14d90d37fb4e67e8b9eec7a8",
+        "duplicate_rejections": [],
+        "generated_ids": [
+          "R:R1-ESCAPEDESC",
+          "R:R1-K4FIBER",
+          "R:R1-LINKRESERVE",
+          "R:R1-MAXCONTACT",
+          "R:R1-SIBDEF",
+          "R:R1-SIGDESC",
+          "R:R1-SPIDERDESC",
+          "R:R1-TRANSIG"
+        ],
+        "inherited_claims": 174,
+        "round_no": 1,
+        "status_downgrades": []
+      },
+      {
+        "close_unresolved_after": {
+          "CLOSE-595": 4,
+          "CLOSE-738": 4,
+          "CLOSE-HYBRID": 3
+        },
+        "close_unresolved_before": {
+          "CLOSE-595": 5,
+          "CLOSE-738": 4,
+          "CLOSE-HYBRID": 3
+        },
+        "content_hash": "5f8d96700ccd63c2e2ae6a3fdfb50ac7260a6ee6cf557379b744023978bfbc43",
+        "duplicate_rejections": [],
+        "generated_ids": [
+          "R:R2-CRITABSORB",
+          "R:R2-CONTACTRED",
+          "R:R2-ROOTSPLIT",
+          "R:R2-SIGCOVEROBS",
+          "R:R2-STABLECERT",
+          "R:R2-TREESEQ",
+          "R:R2-SIGCERT",
+          "R:R2-BOOKSTERILE"
+        ],
+        "inherited_claims": 182,
+        "round_no": 2,
+        "status_downgrades": []
+      },
+      {
+        "close_unresolved_after": {
+          "CLOSE-595": 3,
+          "CLOSE-738": 4,
+          "CLOSE-HYBRID": 3
+        },
+        "close_unresolved_before": {
+          "CLOSE-595": 4,
+          "CLOSE-738": 4,
+          "CLOSE-HYBRID": 3
+        },
+        "content_hash": "60f0e79108762324cad54496d82d9ae8dd9f4d0df26b2f52e6659748936c2a3c",
+        "duplicate_rejections": [],
+        "generated_ids": [
+          "R:R3-COMMONBOOK",
+          "R:R3-KAPPABOOK",
+          "R:R3-FREC",
+          "R:R3-PROFILEBASIS",
+          "R:R3-TWOLAYER",
+          "R:R3-BOOKBRANCH",
+          "R:R3-BOOKCANON",
+          "R:R3-BOOKDISP"
+        ],
+        "inherited_claims": 190,
+        "round_no": 3,
+        "status_downgrades": []
+      },
+      {
+        "close_unresolved_after": {
+          "CLOSE-595": 3,
+          "CLOSE-738": 4,
+          "CLOSE-HYBRID": 3
+        },
+        "close_unresolved_before": {
+          "CLOSE-595": 3,
+          "CLOSE-738": 4,
+          "CLOSE-HYBRID": 3
+        },
+        "content_hash": "718127472cecc44672796fb855821c97ff07db25e328d73efd8f10c696248f1a",
+        "duplicate_rejections": [],
+        "generated_ids": [
+          "R:R4-PAGECERT",
+          "R:R4-MULTIBOOK",
+          "R:R4-DOUBLESTERILE",
+          "R:R4-PAGEFAMILY",
+          "R:R4-MULTIPLIER",
+          "R:R4-PAGECOMPACT",
+          "R:R4-TRICLOSE",
+          "R:R4-CENSUS"
+        ],
+        "inherited_claims": 198,
+        "round_no": 4,
+        "status_downgrades": [
+          "R4-SINGLE-LINK-AND-BOOK-STERILITY: exact status downgraded due to conditional/search dependency"
+        ]
+      }
+    ],
+    "source_claims": 174,
+    "status_counts": {
+      "CONDITIONAL_ON_738_SEQUENCE": 1,
+      "CONDITIONAL_REDUCTION": 6,
+      "PROVED_IN_PACKET": 21,
+      "UNPROVED_CHECKABLE_TARGET": 4
+    },
+    "total_claims": 206
+  },
+  "treatment_generated": 32
+}

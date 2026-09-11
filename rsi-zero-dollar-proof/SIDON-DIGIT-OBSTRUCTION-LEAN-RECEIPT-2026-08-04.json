@@ -1,0 +1,21 @@
+{
+  "schema": "oracle.rsi-zero-dollar-lean-receipt.v1",
+  "createdUtc": "2026-08-04T10:31:47.694325+00:00",
+  "theorem": "OracleDigitSidonObstruction.twoDigitParallelogram",
+  "statementSummary": "For every integer base B>=2 and digits a<b, aa<ab<ba<bb and aa+bb=ab+ba.",
+  "source": "math/EG411Formal/OracleDigitSidonObstruction.lean",
+  "sourceSha256": "sha256:532bd8eb2fb6f07b0202f261c010e713d0e53280b8d5dada3a79bb5023899d68",
+  "command": "lake env lean OracleDigitSidonObstruction.lean",
+  "exitCode": 0,
+  "stdout": "'OracleDigitSidonObstruction.twoDigitParallelogram' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 137.62495749999653,
+  "sorryAx": false,
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "paidCalls": 0,
+  "costUsd": 0.0,
+  "status": "LEAN_KERNEL_CHECKED",
+  "passed": true,
+  "receiptHash": "sha256:363f9531257611768e5fb097d8b2a2862ade2ca5180995953a0f4c26415aac26"
+}

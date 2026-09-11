@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "close_route_reduction": 1,
+    "control_generated_claims": 9,
+    "control_multi_campaign_back_transfers": 9,
+    "control_unresolved_close_obligations": 11,
+    "recursive_claim_gain": 23,
+    "treatment_generated_claims": 32,
+    "treatment_multi_campaign_back_transfers": 32,
+    "treatment_unresolved_close_obligations": 10
+  },
+  "passed": true,
+  "policy_delta": "control forbids generated claims as rule premises; treatment permits recursive consumption to fixed point within each round",
+  "schema": "oracle.three-way-recursive-forge.ablation.v1"
+}

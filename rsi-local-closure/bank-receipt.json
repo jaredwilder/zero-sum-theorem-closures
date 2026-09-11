@@ -1,0 +1,26 @@
+{
+  "schema": "oracle.local-rsi-closure-bank.v1",
+  "createdUtc": "2026-08-04T11:09:03.062317+00:00",
+  "verdict": "LOCAL_RSI_CAPABILITIES_BANKED",
+  "passed": true,
+  "techniqueIds": [
+    "T-RSI-LOCAL-TYPED-CLOSURE-001",
+    "T-RSI-DIGIT-DENSITY-COMPILER-001",
+    "T-RSI-COEFFICIENT-ORBIT-HELDOUT-001",
+    "T-RSI-CLOSURE-INDEPENDENT-VERIFIER-001"
+  ],
+  "registryWrite": {
+    "path": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\ledger\\technique-registry.json",
+    "key": "techniques",
+    "ids_before": 6810,
+    "ids_after": 6814,
+    "added": 4,
+    "dropped": []
+  },
+  "closureReceiptHash": "sha256:ba3e1245b27b90f384c08100ef478741a87b355330dd08a2f0681cf230f2b045",
+  "verificationReceiptHash": "sha256:a9732d30591f73c5c2aa0b15cfd4db6319f1d9b025e62100d9569b65dbb2f1fa",
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "paidCalls": 0,
+  "costUsd": 0.0
+}

@@ -1,0 +1,540 @@
+{
+  "595": [
+    {
+      "claim_uid": "R:R1-LINKRESERVE",
+      "rule_id": "R1-LINK-PROTECTED-RESERVE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Protected Deletion Reserve Inside Every #595 Witness Link"
+    },
+    {
+      "claim_uid": "R:R2-SIGCOVEROBS",
+      "rule_id": "R2-SIGNATURE-COVER-OBSTRUCTION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Countable Signature-Fiber Cover Obstruction"
+    },
+    {
+      "claim_uid": "R:R2-STABLECERT",
+      "rule_id": "R2-STABLE-CERTIFICATE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Stable Certification of Omitted Edges"
+    },
+    {
+      "claim_uid": "R:R3-BOOKCANON",
+      "rule_id": "R3-BOOK-CANONIZATION-TARGET",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Stable-Book Witness Canonization Target"
+    },
+    {
+      "claim_uid": "R:R3-COMMONBOOK",
+      "rule_id": "R3-COMMON-OMITTED-BOOK",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Common Omitted-Edge Stable Book Theorem"
+    },
+    {
+      "claim_uid": "R:R3-KAPPABOOK",
+      "rule_id": "R3-KAPPA-OMITTED-BOOK",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Cardinal Stable-Book Centeredness"
+    },
+    {
+      "claim_uid": "R:R3-PROFILEBASIS",
+      "rule_id": "R3-PROFILE-BASIS-REDUCTION",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Stable-Book Profile-Basis Close Reduction"
+    },
+    {
+      "claim_uid": "R:R4-CENSUS",
+      "rule_id": "R4-CANONICAL-STATE-CENSUS",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Canonical State Census Target"
+    },
+    {
+      "claim_uid": "R:R4-DOUBLESTERILE",
+      "rule_id": "R4-SINGLE-LINK-AND-BOOK-STERILITY",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Single-Link and Single-Book Double Sterility"
+    },
+    {
+      "claim_uid": "R:R4-MULTIBOOK",
+      "rule_id": "R4-MULTIBOOK-INTERACTION",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Multi-Book Interaction Frontier"
+    },
+    {
+      "claim_uid": "R:R4-MULTIPLIER",
+      "rule_id": "R4-LAYER-SIGNATURE-MULTIPLIER",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Layer–Signature–Certificate Multiplier"
+    },
+    {
+      "claim_uid": "R:R4-PAGECERT",
+      "rule_id": "R4-MINIMAL-TRANSVERSAL-PAGE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Minimal-Transversal Page Certificate Theorem"
+    },
+    {
+      "claim_uid": "R:R4-PAGECOMPACT",
+      "rule_id": "R4-PAGE-PROFILE-COMPACTNESS",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Page-Profile Compactness Close Program"
+    },
+    {
+      "claim_uid": "R:R4-PAGEFAMILY",
+      "rule_id": "R4-COUNTABLE-PAGE-FAMILY",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Countable Layer Family Produces a Shared Stable Page Space"
+    },
+    {
+      "claim_uid": "R:R4-TRICLOSE",
+      "rule_id": "R4-THREE-CLOSE-INTERFACE",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Three-Campaign Close Interface"
+    },
+    {
+      "claim_uid": "R:R3-BOOKDISP",
+      "rule_id": "R3-BOOK-DISPERSION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 99,
+      "title": "Stable-Book Localization–Dispersion"
+    },
+    {
+      "claim_uid": "R:R1-K4FIBER",
+      "rule_id": "R1-K4-SIGNATURE-FIBER",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 98,
+      "title": "K4-Free Ambient Signature-Fiber Collapse"
+    },
+    {
+      "claim_uid": "R:R2-SIGCERT",
+      "rule_id": "R2-CERTIFIED-SIGNATURE-DEFECT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 98,
+      "title": "Signature Defects Carry Stable Triangle Certificates"
+    },
+    {
+      "claim_uid": "R:R1-MAXCONTACT",
+      "rule_id": "R1-MAXIMAL-CONTACT-ABSORPTION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 96,
+      "title": "Maximal-Layer Contact Defects Lie in the Minimal Transversal"
+    },
+    {
+      "claim_uid": "R:R2-TREESEQ",
+      "rule_id": "R2-TRANSVERSAL-TREE-SEQUENCE",
+      "status": "CONDITIONAL_ON_738_SEQUENCE",
+      "structural_leverage": 96,
+      "title": "Protected Tree-Sequence Extraction in a Witness Link"
+    },
+    {
+      "claim_uid": "R:R1-TRANSIG",
+      "rule_id": "R1-TRANSVERSAL-SIGNATURE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 95,
+      "title": "Transversal Absorption of Signature-Fiber Edges"
+    },
+    {
+      "claim_uid": "R:R2-BOOKSTERILE",
+      "rule_id": "R2-SINGLE-BOOK",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 92,
+      "title": "Single Stable Triangle Book Is Two-Layer Sterile"
+    },
+    {
+      "claim_uid": "R:R3-BOOKBRANCH",
+      "rule_id": "R3-BOOK-BRANCH-BLADE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 89,
+      "title": "Stable Book as a Clean Branch Reservoir"
+    }
+  ],
+  "738": [
+    {
+      "claim_uid": "R:R1-LINKRESERVE",
+      "rule_id": "R1-LINK-PROTECTED-RESERVE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Protected Deletion Reserve Inside Every #595 Witness Link"
+    },
+    {
+      "claim_uid": "R:R2-STABLECERT",
+      "rule_id": "R2-STABLE-CERTIFICATE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Stable Certification of Omitted Edges"
+    },
+    {
+      "claim_uid": "R:R3-BOOKCANON",
+      "rule_id": "R3-BOOK-CANONIZATION-TARGET",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Stable-Book Witness Canonization Target"
+    },
+    {
+      "claim_uid": "R:R3-COMMONBOOK",
+      "rule_id": "R3-COMMON-OMITTED-BOOK",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Common Omitted-Edge Stable Book Theorem"
+    },
+    {
+      "claim_uid": "R:R3-FREC",
+      "rule_id": "R3-LAYERED-GYARFAS-RECURRENCE",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Recursive Contact-Code Program for the Finite-Layer Gyárfás Hierarchy"
+    },
+    {
+      "claim_uid": "R:R3-TWOLAYER",
+      "rule_id": "R3-TWO-LAYER-FIBER-TARGET",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Two-Layer Cross-Fiber Purification Target"
+    },
+    {
+      "claim_uid": "R:R4-CENSUS",
+      "rule_id": "R4-CANONICAL-STATE-CENSUS",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Canonical State Census Target"
+    },
+    {
+      "claim_uid": "R:R4-MULTIPLIER",
+      "rule_id": "R4-LAYER-SIGNATURE-MULTIPLIER",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Layer–Signature–Certificate Multiplier"
+    },
+    {
+      "claim_uid": "R:R4-PAGECERT",
+      "rule_id": "R4-MINIMAL-TRANSVERSAL-PAGE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Minimal-Transversal Page Certificate Theorem"
+    },
+    {
+      "claim_uid": "R:R4-TRICLOSE",
+      "rule_id": "R4-THREE-CLOSE-INTERFACE",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Three-Campaign Close Interface"
+    },
+    {
+      "claim_uid": "R:R1-K4FIBER",
+      "rule_id": "R1-K4-SIGNATURE-FIBER",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 98,
+      "title": "K4-Free Ambient Signature-Fiber Collapse"
+    },
+    {
+      "claim_uid": "R:R2-SIGCERT",
+      "rule_id": "R2-CERTIFIED-SIGNATURE-DEFECT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 98,
+      "title": "Signature Defects Carry Stable Triangle Certificates"
+    },
+    {
+      "claim_uid": "R:R1-SIGDESC",
+      "rule_id": "R1-SIGNATURE-DESCENT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 97,
+      "title": "Layered Signature-Fiber Defect Descent"
+    },
+    {
+      "claim_uid": "R:R2-TREESEQ",
+      "rule_id": "R2-TRANSVERSAL-TREE-SEQUENCE",
+      "status": "CONDITIONAL_ON_738_SEQUENCE",
+      "structural_leverage": 96,
+      "title": "Protected Tree-Sequence Extraction in a Witness Link"
+    },
+    {
+      "claim_uid": "R:R2-ROOTSPLIT",
+      "rule_id": "R2-ROOT-DEFECT-SPLIT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 94,
+      "title": "Root-Level versus Deep Spider-Defect Split"
+    },
+    {
+      "claim_uid": "R:R2-CONTACTRED",
+      "rule_id": "R2-LAYERED-CONTACT-REDUCTION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 93,
+      "title": "Finite Contact-Language Reduction for Layered Defects"
+    },
+    {
+      "claim_uid": "R:R1-ESCAPEDESC",
+      "rule_id": "R1-CRITICAL-ESCAPE-DESCENT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 92,
+      "title": "Critical Escape with Lower-Layer Ambient Defects"
+    },
+    {
+      "claim_uid": "R:R1-SIBDEF",
+      "rule_id": "R1-SIBLING-DEFECT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 91,
+      "title": "Sibling Defect Graphs Are Triangle-Free in K4-Free Hosts"
+    },
+    {
+      "claim_uid": "R:R2-CRITABSORB",
+      "rule_id": "R2-CRITICAL-ABSORPTION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 89,
+      "title": "Critical Escape Defects as Lower-Layer Transversal Data"
+    },
+    {
+      "claim_uid": "R:R3-BOOKBRANCH",
+      "rule_id": "R3-BOOK-BRANCH-BLADE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 89,
+      "title": "Stable Book as a Clean Branch Reservoir"
+    },
+    {
+      "claim_uid": "R:R1-SPIDERDESC",
+      "rule_id": "R1-SPIDER-DESCENT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 88,
+      "title": "Layer-Induced Spider Defect Descent"
+    }
+  ],
+  "HYBRID": [
+    {
+      "claim_uid": "R:R1-LINKRESERVE",
+      "rule_id": "R1-LINK-PROTECTED-RESERVE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Protected Deletion Reserve Inside Every #595 Witness Link"
+    },
+    {
+      "claim_uid": "R:R2-SIGCOVEROBS",
+      "rule_id": "R2-SIGNATURE-COVER-OBSTRUCTION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Countable Signature-Fiber Cover Obstruction"
+    },
+    {
+      "claim_uid": "R:R2-STABLECERT",
+      "rule_id": "R2-STABLE-CERTIFICATE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Stable Certification of Omitted Edges"
+    },
+    {
+      "claim_uid": "R:R3-BOOKCANON",
+      "rule_id": "R3-BOOK-CANONIZATION-TARGET",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Stable-Book Witness Canonization Target"
+    },
+    {
+      "claim_uid": "R:R3-COMMONBOOK",
+      "rule_id": "R3-COMMON-OMITTED-BOOK",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Common Omitted-Edge Stable Book Theorem"
+    },
+    {
+      "claim_uid": "R:R3-FREC",
+      "rule_id": "R3-LAYERED-GYARFAS-RECURRENCE",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Recursive Contact-Code Program for the Finite-Layer Gyárfás Hierarchy"
+    },
+    {
+      "claim_uid": "R:R3-KAPPABOOK",
+      "rule_id": "R3-KAPPA-OMITTED-BOOK",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Cardinal Stable-Book Centeredness"
+    },
+    {
+      "claim_uid": "R:R3-PROFILEBASIS",
+      "rule_id": "R3-PROFILE-BASIS-REDUCTION",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Stable-Book Profile-Basis Close Reduction"
+    },
+    {
+      "claim_uid": "R:R3-TWOLAYER",
+      "rule_id": "R3-TWO-LAYER-FIBER-TARGET",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Two-Layer Cross-Fiber Purification Target"
+    },
+    {
+      "claim_uid": "R:R4-CENSUS",
+      "rule_id": "R4-CANONICAL-STATE-CENSUS",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Canonical State Census Target"
+    },
+    {
+      "claim_uid": "R:R4-DOUBLESTERILE",
+      "rule_id": "R4-SINGLE-LINK-AND-BOOK-STERILITY",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Single-Link and Single-Book Double Sterility"
+    },
+    {
+      "claim_uid": "R:R4-MULTIBOOK",
+      "rule_id": "R4-MULTIBOOK-INTERACTION",
+      "status": "UNPROVED_CHECKABLE_TARGET",
+      "structural_leverage": 100,
+      "title": "Multi-Book Interaction Frontier"
+    },
+    {
+      "claim_uid": "R:R4-MULTIPLIER",
+      "rule_id": "R4-LAYER-SIGNATURE-MULTIPLIER",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Layer–Signature–Certificate Multiplier"
+    },
+    {
+      "claim_uid": "R:R4-PAGECERT",
+      "rule_id": "R4-MINIMAL-TRANSVERSAL-PAGE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Minimal-Transversal Page Certificate Theorem"
+    },
+    {
+      "claim_uid": "R:R4-PAGECOMPACT",
+      "rule_id": "R4-PAGE-PROFILE-COMPACTNESS",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Page-Profile Compactness Close Program"
+    },
+    {
+      "claim_uid": "R:R4-PAGEFAMILY",
+      "rule_id": "R4-COUNTABLE-PAGE-FAMILY",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 100,
+      "title": "Countable Layer Family Produces a Shared Stable Page Space"
+    },
+    {
+      "claim_uid": "R:R4-TRICLOSE",
+      "rule_id": "R4-THREE-CLOSE-INTERFACE",
+      "status": "CONDITIONAL_REDUCTION",
+      "structural_leverage": 100,
+      "title": "Three-Campaign Close Interface"
+    },
+    {
+      "claim_uid": "R:R3-BOOKDISP",
+      "rule_id": "R3-BOOK-DISPERSION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 99,
+      "title": "Stable-Book Localization–Dispersion"
+    },
+    {
+      "claim_uid": "R:R1-K4FIBER",
+      "rule_id": "R1-K4-SIGNATURE-FIBER",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 98,
+      "title": "K4-Free Ambient Signature-Fiber Collapse"
+    },
+    {
+      "claim_uid": "R:R2-SIGCERT",
+      "rule_id": "R2-CERTIFIED-SIGNATURE-DEFECT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 98,
+      "title": "Signature Defects Carry Stable Triangle Certificates"
+    },
+    {
+      "claim_uid": "R:R1-SIGDESC",
+      "rule_id": "R1-SIGNATURE-DESCENT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 97,
+      "title": "Layered Signature-Fiber Defect Descent"
+    },
+    {
+      "claim_uid": "R:R1-MAXCONTACT",
+      "rule_id": "R1-MAXIMAL-CONTACT-ABSORPTION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 96,
+      "title": "Maximal-Layer Contact Defects Lie in the Minimal Transversal"
+    },
+    {
+      "claim_uid": "R:R2-TREESEQ",
+      "rule_id": "R2-TRANSVERSAL-TREE-SEQUENCE",
+      "status": "CONDITIONAL_ON_738_SEQUENCE",
+      "structural_leverage": 96,
+      "title": "Protected Tree-Sequence Extraction in a Witness Link"
+    },
+    {
+      "claim_uid": "R:R1-TRANSIG",
+      "rule_id": "R1-TRANSVERSAL-SIGNATURE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 95,
+      "title": "Transversal Absorption of Signature-Fiber Edges"
+    },
+    {
+      "claim_uid": "R:R2-ROOTSPLIT",
+      "rule_id": "R2-ROOT-DEFECT-SPLIT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 94,
+      "title": "Root-Level versus Deep Spider-Defect Split"
+    },
+    {
+      "claim_uid": "R:R2-CONTACTRED",
+      "rule_id": "R2-LAYERED-CONTACT-REDUCTION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 93,
+      "title": "Finite Contact-Language Reduction for Layered Defects"
+    },
+    {
+      "claim_uid": "R:R1-ESCAPEDESC",
+      "rule_id": "R1-CRITICAL-ESCAPE-DESCENT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 92,
+      "title": "Critical Escape with Lower-Layer Ambient Defects"
+    },
+    {
+      "claim_uid": "R:R2-BOOKSTERILE",
+      "rule_id": "R2-SINGLE-BOOK",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 92,
+      "title": "Single Stable Triangle Book Is Two-Layer Sterile"
+    },
+    {
+      "claim_uid": "R:R1-SIBDEF",
+      "rule_id": "R1-SIBLING-DEFECT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 91,
+      "title": "Sibling Defect Graphs Are Triangle-Free in K4-Free Hosts"
+    },
+    {
+      "claim_uid": "R:R2-CRITABSORB",
+      "rule_id": "R2-CRITICAL-ABSORPTION",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 89,
+      "title": "Critical Escape Defects as Lower-Layer Transversal Data"
+    },
+    {
+      "claim_uid": "R:R3-BOOKBRANCH",
+      "rule_id": "R3-BOOK-BRANCH-BLADE",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 89,
+      "title": "Stable Book as a Clean Branch Reservoir"
+    },
+    {
+      "claim_uid": "R:R1-SPIDERDESC",
+      "rule_id": "R1-SPIDER-DESCENT",
+      "status": "PROVED_IN_PACKET",
+      "structural_leverage": 88,
+      "title": "Layer-Induced Spider Defect Descent"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "oracle.rsi-zero-dollar-proof.v1",
+  "createdAt": "2026-07-29T23:11:36.644955+00:00",
+  "verdict": "RSI_REUSE_PROVED",
+  "target": {
+    "schema": "oracle.rsi-proof-target.v1",
+    "family": "zero-rhs-linear-relation-avoidance",
+    "semantics": "arbitrary distinct ordered tuples",
+    "order": 7,
+    "coefficients": [
+      231,
+      -77,
+      -385,
+      385,
+      77,
+      11,
+      -11,
+      -231
+    ],
+    "rhs": 0,
+    "allowRepeats": false,
+    "domainMax": 76686282021340161,
+    "minimumRequestedSize": 9,
+    "mutation": {
+      "scale": 11,
+      "permutation": [
+        2,
+        1,
+        3,
+        4,
+        6,
+        0,
+        7,
+        5
+      ],
+      "derivedFrom": "sha256:9a250d364fe073de467e5447b4a8a344799eee3406fb3fa44b4469b05c681420"
+    },
+    "targetId": "rsi-proof-c7-da1afa1bdb9284acaf3f"
+  },
+  "targetWasSelectedBeforeExecution": true,
+  "baseline": {
+    "status": "SAFE_REFUSAL_GROUND_SET_TOO_LARGE",
+    "method": "generic exhaustive subset search",
+    "domainSize": 76686282021340161,
+    "enumerationStates": "2^76686282021340161",
+    "configuredGroundSetCap": 80,
+    "witnessProduced": false,
+    "mathematicalClaim": null,
+    "modelCalls": 0,
+    "costUsd": 0.0
+  },
+  "rsiArm": {
+    "status": "CERTIFIED_CONSTRUCTION",
+    "techniquesUsed": [
+      {
+        "id": "T-GOLD-OCG-049",
+        "entryHash": "sha256:a85cc0df208a992138dd727d6f2e9b0749cfbf1922d81a7b580f436b4380ca96",
+        "executor": "oracle/tools/gold_round_coefficient_quotient.py",
+        "executorSha256": "sha256:296642984e4a03e76c6630dcfd86208c7535588454769acc746d3eefaa2680bb",
+        "boundary": "{\"boundary\":\"Nonzero rhs requires joint normalization of coefficients and rhs. Zero trimming is rejected as non-equivalent unless a separate dummy-coordinate theorem is proved.\"}"
+      },
+      {
+        "id": "T-GOLD-OCG-136",
+        "entryHash": "sha256:0d6e6f80b61627cf4e09ad749833c478daf488c4dfce7c4634ab694317728ce3",
+        "executor": "oracle/tools/gold_round_pascal_power_constructor.py",
+        "executorSha256": "sha256:906e298505d610afea45ae6c4bc5272b634e022f348d15d4039200465c73da57",
+        "boundary": "{\"notClaimed\":\"optimal density or polynomial-size construction\"}"
+      }
+    ],
+    "signatureMatch": true,
+    "normalizedSignature": [
+      -35,
+      -21,
+      -7,
+      -1,
+      1,
+      7,
+      21,
+      35
+    ],
+    "constructorBase": 129,
+    "witness": [
+      1,
+      129,
+      16641,
+      2146689,
+      276922881,
+      35723051649,
+      4608273662721,
+      594467302491009,
+      76686282021340161
+    ],
+    "witnessSize": 9,
+    "orderedDistinctAssignmentsChecked": 362880,
+    "expectedAssignments": 362880,
+    "firstViolation": null,
+    "independentlyVerified": true,
+    "verificationSeconds": 0.36628209999616956,
+    "modelCalls": 0,
+    "networkCalls": 0,
+    "costUsd": 0.0
+  },
+  "ablations": [
+    {
+      "removed": "T-GOLD-OCG-049",
+      "status": "NO_ROUTE",
+      "reason": "the scaled and permuted coefficient vector does not exactly match the constructor signature",
+      "exactSignatureMatch": false
+    },
+    {
+      "removed": "T-GOLD-OCG-136",
+      "status": "NO_WITNESS",
+      "reason": "the quotient recognizes the family but supplies no construction",
+      "witnessProduced": false
+    }
+  ],
+  "registryShaBefore": "sha256:9a250d364fe073de467e5447b4a8a344799eee3406fb3fa44b4469b05c681420",
+  "registryShaAfter": "sha256:9a250d364fe073de467e5447b4a8a344799eee3406fb3fa44b4469b05c681420",
+  "paidCalls": 0,
+  "costUsd": 0.0,
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "harnessSha256": "sha256:d8d3f6fcbff8d96166270f9285e924654093513dc79b97ebff938a5a24d080f1",
+  "passed": true,
+  "receiptHash": "sha256:f8901fd298c8167326d6ca4ebcb319614fee41f4a64f13e8ae69d721d92a30f0"
+}

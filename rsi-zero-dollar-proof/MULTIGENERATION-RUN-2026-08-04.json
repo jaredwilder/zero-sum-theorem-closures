@@ -1,0 +1,255 @@
+{
+  "schema": "oracle.rsi-multigeneration-zero-dollar.v1",
+  "createdUtc": "2026-08-04T10:46:45.120948+00:00",
+  "verdict": "MULTIGENERATION_ZERO_DOLLAR_RSI_PROVED",
+  "passed": true,
+  "seal": "evidence/rsi-zero-dollar-proof/MULTIGENERATION-TARGET-SEAL-2026-08-04.json",
+  "sealHash": "sha256:144a763621a7c975fffe5854f0775c8bc26e61b145685ef7a6c9144814bee460",
+  "prestateChecks": [
+    {
+      "path": "oracle/ledger/technique-registry.json",
+      "expected": "sha256:84e077de54dd90772ff9d34f8009778197bf6a2387067e51be5383d89ee56485",
+      "actual": "sha256:84e077de54dd90772ff9d34f8009778197bf6a2387067e51be5383d89ee56485",
+      "passed": true
+    },
+    {
+      "path": "oracle/ledger/ratchet-cross-run-ledger.json",
+      "expected": "sha256:658b0dd0746a58ef8c0d97668c54c0a09cbba3b1a6e9a500d31768f31fe7e93c",
+      "actual": "sha256:658b0dd0746a58ef8c0d97668c54c0a09cbba3b1a6e9a500d31768f31fe7e93c",
+      "passed": true
+    },
+    {
+      "path": "oracle/evidence/targets/open-frontier.jsonl",
+      "expected": "sha256:cca923e14600e4ff4367e268e955e746a18b7e7ed3e37c81d5df30f166cd793f",
+      "actual": "sha256:cca923e14600e4ff4367e268e955e746a18b7e7ed3e37c81d5df30f166cd793f",
+      "passed": true
+    },
+    {
+      "path": "oracle/tools/rsi_zero_dollar_digit_batch.py",
+      "expected": "sha256:0637a61db0db0d91e2c669e9f861ff1e8f143094678b949e3cb7557e36f59634",
+      "actual": "sha256:0637a61db0db0d91e2c669e9f861ff1e8f143094678b949e3cb7557e36f59634",
+      "passed": true
+    },
+    {
+      "path": "oracle/tools/weird_round_digit_parameter.py",
+      "expected": "sha256:fcac3e9d1714dda7bce3bbfcca7a340c7e2bb7dbb8bdca0dd8333b42c62b7984",
+      "actual": "sha256:fcac3e9d1714dda7bce3bbfcca7a340c7e2bb7dbb8bdca0dd8333b42c62b7984",
+      "passed": true
+    },
+    {
+      "path": "oracle/tools/autonomy_divorce_runner.py",
+      "expected": "sha256:c557cf6f746ef8c020e43fafcbd52ed6395fc26e199af045297f2d78ef79a953",
+      "actual": "sha256:c557cf6f746ef8c020e43fafcbd52ed6395fc26e199af045297f2d78ef79a953",
+      "passed": true
+    }
+  ],
+  "generations": [
+    {
+      "kind": "ALL_LENGTH_DIGIT_LANGUAGE_THEOREM",
+      "parents": [
+        "sha256:144a763621a7c975fffe5854f0775c8bc26e61b145685ef7a6c9144814bee460"
+      ],
+      "payload": {
+        "coefficients": [
+          -3,
+          1,
+          1,
+          1
+        ],
+        "base": 9,
+        "alphabet": [
+          0,
+          1
+        ],
+        "claim": "Every finite base-9 word over digits {0,1} avoids the sealed arbitrary-distinct ordered relation.",
+        "primary": {
+          "safe": true,
+          "leastDigits": null,
+          "numbersByCoefficient": null,
+          "statesVisited": 1
+        },
+        "independent": {
+          "safe": true,
+          "statesVisited": 1,
+          "transitionsChecked": 16
+        },
+        "passed": true,
+        "verificationSummary": "two independent carry automata agree: safe"
+      },
+      "artifactHash": "sha256:9a6f3a310fcb2d4798a422b266946e66333ac06e6d6ee7db8e53dc58f5280485"
+    },
+    {
+      "kind": "FINITE_CONSTRUCTION_MATERIALIZER",
+      "parents": [
+        "sha256:9a6f3a310fcb2d4798a422b266946e66333ac06e6d6ee7db8e53dc58f5280485"
+      ],
+      "payload": {
+        "inputTheorem": "sha256:9a6f3a310fcb2d4798a422b266946e66333ac06e6d6ee7db8e53dc58f5280485",
+        "wordLength": 5,
+        "construction": [
+          0,
+          1,
+          9,
+          10,
+          81,
+          82,
+          90,
+          91,
+          729,
+          730,
+          738,
+          739,
+          810,
+          811,
+          819,
+          820,
+          6561,
+          6562,
+          6570,
+          6571,
+          6642,
+          6643,
+          6651,
+          6652,
+          7290,
+          7291,
+          7299,
+          7300,
+          7371,
+          7372,
+          7380,
+          7381
+        ],
+        "constructionSize": 32,
+        "verification": {
+          "passed": true,
+          "orderedDistinctAssignmentsChecked": 863040,
+          "firstViolation": null
+        },
+        "passed": true,
+        "verificationSummary": "863,040 assignments checked"
+      },
+      "artifactHash": "sha256:9c6c928cc2730c0adc62c7beada296900256a130f4c6a082860e4dfe95b39d3e"
+    },
+    {
+      "kind": "AFFINE_IMAGE_PRESERVATION_COMPILER",
+      "parents": [
+        "sha256:9c6c928cc2730c0adc62c7beada296900256a130f4c6a082860e4dfe95b39d3e"
+      ],
+      "payload": {
+        "domain": "integer finite relation-avoiding sets with arbitrary distinct ordered tuples",
+        "preconditions": [
+          "sum(coefficients)=0",
+          "scale!=0"
+        ],
+        "coefficientSum": 0,
+        "symbolicVerification": {
+          "lhsVariableCoefficients": [
+            -3,
+            1,
+            1,
+            1
+          ],
+          "transformedVariableCoefficientsAreScaleTimes": [
+            -3,
+            1,
+            1,
+            1
+          ],
+          "translationCoefficient": 0,
+          "identity": "sum(c_i*(q*x_i+t)) = q*sum(c_i*x_i) + t*sum(c_i)"
+        },
+        "claim": "Every injective affine image q*S+t preserves avoidance when sum(coefficients)=0 and q is nonzero.",
+        "passed": true,
+        "verificationSummary": "exact symbolic coefficient identity"
+      },
+      "artifactHash": "sha256:c6efa527373677d093a20217ecef1d42b1b29ba0c741fab52b526e9bbed58d91"
+    },
+    {
+      "kind": "HASH_DERIVED_AFFINE_HELD_OUT_CONSTRUCTION",
+      "parents": [
+        "sha256:c6efa527373677d093a20217ecef1d42b1b29ba0c741fab52b526e9bbed58d91"
+      ],
+      "payload": {
+        "inputCompiler": "sha256:c6efa527373677d093a20217ecef1d42b1b29ba0c741fab52b526e9bbed58d91",
+        "derivedFromParentHash": true,
+        "scale": 8,
+        "translation": 46,
+        "construction": [
+          46,
+          54,
+          118,
+          126,
+          694,
+          702,
+          766,
+          774,
+          5878,
+          5886,
+          5950,
+          5958,
+          6526,
+          6534,
+          6598,
+          6606,
+          52534,
+          52542,
+          52606,
+          52614,
+          53182,
+          53190,
+          53254,
+          53262,
+          58366,
+          58374,
+          58438,
+          58446,
+          59014,
+          59022,
+          59086,
+          59094
+        ],
+        "constructionSize": 32,
+        "distinctnessPreserved": true,
+        "symbolicIdentityGridChecks": 625,
+        "symbolicIdentityGridPassed": true,
+        "verification": {
+          "passed": true,
+          "orderedDistinctAssignmentsChecked": 863040,
+          "firstViolation": null
+        },
+        "passed": true,
+        "verificationSummary": "held-out affine image; 863,040 assignments checked"
+      },
+      "artifactHash": "sha256:1ce2504b3a92fafd12378db5f2ebd3dc14b87481e2a3d5aba071669b5700860b"
+    }
+  ],
+  "generationCount": 4,
+  "causalParentChainVerified": true,
+  "newReusableCapabilities": [
+    "FINITE_CONSTRUCTION_MATERIALIZER",
+    "AFFINE_IMAGE_PRESERVATION_COMPILER"
+  ],
+  "ablations": [
+    {
+      "removed": "G1",
+      "effect": "G2 has no certified all-length parent and must refuse"
+    },
+    {
+      "removed": "G2",
+      "effect": "G3 has no construction artifact to transform"
+    },
+    {
+      "removed": "G3",
+      "effect": "G4 has no authority-preserving affine route"
+    }
+  ],
+  "networkGuard": "socket.socket replaced with a hard-failure function before G1",
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "paidCalls": 0,
+  "costUsd": 0.0,
+  "seconds": 0.828795,
+  "claimBoundary": "Proves one sealed four-generation causal chain in a supported zero-sum linear-relation family, including a reusable affine-transfer compiler and a hash-derived held-out descendant. It does not prove unbounded autonomous compiler invention, infinite historical novelty, or coverage of unmatched shapes.",
+  "receiptHash": "sha256:9a943c9e79bd04abf517793d186d0c6ccab71c749a870c69ec75e24ea0d58084"
+}

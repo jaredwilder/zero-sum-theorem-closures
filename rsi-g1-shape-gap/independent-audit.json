@@ -1,0 +1,198 @@
+{
+  "schema": "oracle.rsi-g1.independent-audit.v1",
+  "createdUtc": "2026-08-04T11:40:10.316265+00:00",
+  "verdict": "G1_EXCEPTION_LOOP_INDEPENDENTLY_VERIFIED",
+  "passed": true,
+  "checks": [
+    {
+      "name": "seal_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_receipt_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontier_receipt_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manifest_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_model_no_fallback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "package_source_hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qualification_complete",
+      "passed": true,
+      "detail": {
+        "train": 5,
+        "heldout": 5
+      }
+    },
+    {
+      "name": "mutation_rejection_complete",
+      "passed": true,
+      "detail": {
+        "mutations": 40
+      }
+    },
+    {
+      "name": "fresh_independent_ten_case_replay",
+      "passed": true,
+      "detail": [
+        {
+          "source": [
+            4,
+            3,
+            2
+          ],
+          "passed": true
+        },
+        {
+          "source": [
+            5,
+            3,
+            2
+          ],
+          "passed": true
+        },
+        {
+          "source": [
+            5,
+            4,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "source": [
+            6,
+            4,
+            2
+          ],
+          "passed": true
+        },
+        {
+          "source": [
+            6,
+            5,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "source": [
+            6,
+            3,
+            2
+          ],
+          "passed": true
+        },
+        {
+          "source": [
+            6,
+            5,
+            4
+          ],
+          "passed": true
+        },
+        {
+          "source": [
+            7,
+            4,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "source": [
+            7,
+            5,
+            2
+          ],
+          "passed": true
+        },
+        {
+          "source": [
+            8,
+            6,
+            4
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "compiler_registry_no_loss_and_membership",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sovereign_technique_registered",
+      "passed": true,
+      "detail": {
+        "techniqueCount": 6815
+      }
+    },
+    {
+      "name": "real_frontier_definition_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "record_comparison_truthful",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compiler_reentered_typed_graph",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "closure_reran_on_expanded_graph",
+      "passed": true,
+      "detail": {
+        "artifacts": 889,
+        "directAssignments": 10528320,
+        "carryTheorems": 50
+      }
+    }
+  ],
+  "compilerId": "G1-COVERING-LIFT-V1",
+  "techniqueId": "T-G1-COVERING-LIFT-V1",
+  "admittedCall": {
+    "model": "google/gemini-3.6-flash",
+    "costUsd": 0.0571425,
+    "tokens": 10395
+  },
+  "costBoundary": "The admitted call is exact. An earlier response-escaping failure occurred before raw persistence was hardened, so this is not claimed as total session spend.",
+  "demonstratedLoop": [
+    "typed verified cluster",
+    "sealed split",
+    "external compiler proposal",
+    "AST policy",
+    "isolated execution",
+    "independent verifier",
+    "hidden qualification",
+    "safe promotion",
+    "real frontier replay",
+    "typed graph re-entry",
+    "local closure rerun"
+  ],
+  "claimBoundary": "This verifies one full G1 compiler-invention cycle. It does not establish autonomous repeated compiler invention, a new covering record, historical theorem novelty, or a solved open problem.",
+  "auditHash": "sha256:fb9dbe6794d3779ec0b3ccd83a088f91147bdd40fba5df8062f94fd17240409e"
+}

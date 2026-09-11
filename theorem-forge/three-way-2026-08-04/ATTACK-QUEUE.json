@@ -1,0 +1,139 @@
+[
+  {
+    "back_transfer": [
+      "595",
+      "738",
+      "HYBRID"
+    ],
+    "claim_hash": "5cdd658513671d7c06f4698c6cc38543c0539e8723e1706e19fd38635d48a458",
+    "claim_uid": "R:R3-BOOKCANON",
+    "falsifier": "A finite family of layers whose witnesses evade every proposed finite signature scaffold.",
+    "status": "UNPROVED_CHECKABLE_TARGET",
+    "structural_leverage": 100,
+    "title": "Stable-Book Witness Canonization Target"
+  },
+  {
+    "back_transfer": [
+      "738",
+      "HYBRID"
+    ],
+    "claim_hash": "fba6eefcc1e0c6084e62e8c310e5d3ec90e4fbbed102dfccef432f27f94d4b94",
+    "claim_uid": "R:R3-FREC",
+    "falsifier": "A family where within-fiber descent holds but no finite cross-fiber gluing statement can bound the hierarchy.",
+    "status": "CONDITIONAL_REDUCTION",
+    "structural_leverage": 100,
+    "title": "Recursive Contact-Code Program for the Finite-Layer Gyárfás Hierarchy"
+  },
+  {
+    "back_transfer": [
+      "595",
+      "HYBRID"
+    ],
+    "claim_hash": "d03a8fe96f2a5991adabd3e06342b9bbac2b89eff7057a79db8af311c6b6c823",
+    "claim_uid": "R:R3-PROFILEBASIS",
+    "falsifier": "A certificate profile not captured by the proposed countable basis or a semantic mismatch between profile handling and edge inclusion.",
+    "status": "CONDITIONAL_REDUCTION",
+    "structural_leverage": 100,
+    "title": "Stable-Book Profile-Basis Close Reduction"
+  },
+  {
+    "back_transfer": [
+      "738",
+      "HYBRID"
+    ],
+    "claim_hash": "8a9b554e9adcabd1b6ba8c1bc6afc340a23b22b79546cf255cbe1d6a7827f56f",
+    "claim_uid": "R:R3-TWOLAYER",
+    "falsifier": "A two-layer counterexample whose obstruction already occurs inside one signature fiber.",
+    "status": "UNPROVED_CHECKABLE_TARGET",
+    "structural_leverage": 100,
+    "title": "Two-Layer Cross-Fiber Purification Target"
+  },
+  {
+    "back_transfer": [
+      "738",
+      "595",
+      "HYBRID"
+    ],
+    "claim_hash": "40a6ef7a445dad3f127e4273c75f73d39152fc199ba3eb44acb68cb197a3df8d",
+    "claim_uid": "R:R4-CENSUS",
+    "falsifier": "A missing state schema discovered by a finite graph outside the encoding or nonisomorphic states incorrectly identified.",
+    "status": "UNPROVED_CHECKABLE_TARGET",
+    "structural_leverage": 100,
+    "title": "Canonical State Census Target"
+  },
+  {
+    "back_transfer": [
+      "595",
+      "HYBRID"
+    ],
+    "claim_hash": "713798a24f51f49c54558401c782ad9de6a6185bcc7afa9d83ecaed0ed9b0637",
+    "claim_uid": "R:R4-DOUBLESTERILE",
+    "falsifier": "A theorem deriving tc>2 solely from one link or one stable book.",
+    "status": "CONDITIONAL_REDUCTION",
+    "structural_leverage": 100,
+    "title": "Single-Link and Single-Book Double Sterility"
+  },
+  {
+    "back_transfer": [
+      "595",
+      "HYBRID"
+    ],
+    "claim_hash": "8bd4e6698def2d04e15102c96649fc2f5c7d3fbf8858b05ba0fedea45b68d5ed",
+    "claim_uid": "R:R4-MULTIBOOK",
+    "falsifier": "A single stable book with tc>2, or a proof that arbitrary disjoint book unions already suffice.",
+    "status": "UNPROVED_CHECKABLE_TARGET",
+    "structural_leverage": 100,
+    "title": "Multi-Book Interaction Frontier"
+  },
+  {
+    "back_transfer": [
+      "738",
+      "595",
+      "HYBRID"
+    ],
+    "claim_hash": "f8331e23c4b23b7a4d331401b30095dbbf7d8f9228ba4dfb32aee90da3827b2a",
+    "claim_uid": "R:R4-MULTIPLIER",
+    "falsifier": "A bound valid in the combined state but failing one of the three stated transfer maps.",
+    "status": "CONDITIONAL_REDUCTION",
+    "structural_leverage": 100,
+    "title": "Layer–Signature–Certificate Multiplier"
+  },
+  {
+    "back_transfer": [
+      "595",
+      "HYBRID"
+    ],
+    "claim_hash": "3c4ab6c1cc7ba368d82b90b4196fe042f2add4b5735cfa21a3c0374ba9d3bfa5",
+    "claim_uid": "R:R4-PAGECOMPACT",
+    "falsifier": "A canonical page profile for which every corresponding maximal layer must still omit the spine edge.",
+    "status": "CONDITIONAL_REDUCTION",
+    "structural_leverage": 100,
+    "title": "Page-Profile Compactness Close Program"
+  },
+  {
+    "back_transfer": [
+      "738",
+      "595",
+      "HYBRID"
+    ],
+    "claim_hash": "abf93e318bee780922494459101f82190e06d651cc475f75f8ebcb92f028071d",
+    "claim_uid": "R:R4-TRICLOSE",
+    "falsifier": "A classification sufficient for one state but semantically incapable of transfer to the other two.",
+    "status": "CONDITIONAL_REDUCTION",
+    "structural_leverage": 100,
+    "title": "Three-Campaign Close Interface"
+  },
+  {
+    "back_transfer": [
+      "738",
+      "595",
+      "HYBRID"
+    ],
+    "claim_hash": "95efb598ab958a6f357ef2941a235536a902ffe875baf1251e5df8389d648093",
+    "claim_uid": "R:R2-TREESEQ",
+    "falsifier": "A verified #738 sequence and a witness where the recursive extraction fails.",
+    "status": "CONDITIONAL_ON_738_SEQUENCE",
+    "structural_leverage": 96,
+    "title": "Protected Tree-Sequence Extraction in a Witness Link"
+  }
+]

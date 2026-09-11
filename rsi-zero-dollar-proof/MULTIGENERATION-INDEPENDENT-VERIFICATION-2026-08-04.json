@@ -1,0 +1,65 @@
+{
+  "schema": "oracle.rsi-multigeneration-independent-verification.v1",
+  "createdUtc": "2026-08-04T10:48:44.424920+00:00",
+  "verdict": "INDEPENDENTLY_VERIFIED",
+  "passed": true,
+  "producerReceipt": "evidence/rsi-zero-dollar-proof/MULTIGENERATION-RUN-2026-08-04.json",
+  "producerReceiptHash": "sha256:9a943c9e79bd04abf517793d186d0c6ccab71c749a870c69ec75e24ea0d58084",
+  "checks": [
+    {
+      "name": "receipt_hash",
+      "passed": true
+    },
+    {
+      "name": "all_artifact_hashes",
+      "passed": true
+    },
+    {
+      "name": "causal_parent_chain",
+      "passed": true
+    },
+    {
+      "name": "G1_independent_carry",
+      "passed": true,
+      "transitionsChecked": 16
+    },
+    {
+      "name": "G2_direct_construction",
+      "passed": true,
+      "assignmentsChecked": 863040
+    },
+    {
+      "name": "G3_symbolic_affine_identity",
+      "passed": true,
+      "reason": "translation term is t*sum(coefficients)=0; remaining expression is q times the parent relation"
+    },
+    {
+      "name": "G4_parameters_hash_derived",
+      "passed": true,
+      "scale": 8,
+      "translation": 46
+    },
+    {
+      "name": "G4_affine_materialization",
+      "passed": true
+    },
+    {
+      "name": "G4_held_out_direct_check",
+      "passed": true,
+      "assignmentsChecked": 863040
+    },
+    {
+      "name": "sealed_prestate_record_is_exact",
+      "passed": true
+    },
+    {
+      "name": "zero_external_accounting",
+      "passed": true
+    }
+  ],
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "paidCalls": 0,
+  "costUsd": 0.0,
+  "verificationReceiptHash": "sha256:0ee87c920aaf065126ac330c6e5cf52f309045d2238848eb554114f921bade25"
+}

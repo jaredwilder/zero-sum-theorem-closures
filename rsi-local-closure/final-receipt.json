@@ -1,0 +1,91 @@
+{
+  "schema": "oracle.local-rsi-closure.v1",
+  "createdUtc": "2026-08-04T11:32:18.414534+00:00",
+  "verdict": "LOCAL_TYPED_CLOSURE_SATURATED",
+  "passed": true,
+  "censusHash": "sha256:6a5e4399a702372b261344a377ec28ab799ab4476c4204c2acfbbe48b5241539",
+  "graphHash": "sha256:8121f860229a51e80cb8954bfe871cf69458d3b3eef5710ccd22f07ae8131c60",
+  "seedCount": 27,
+  "finalArtifactCount": 889,
+  "newArtifactCount": 862,
+  "generationCount": 7,
+  "generations": [
+    {
+      "generation": 1,
+      "added": 128,
+      "total": 155
+    },
+    {
+      "generation": 2,
+      "added": 176,
+      "total": 331
+    },
+    {
+      "generation": 3,
+      "added": 176,
+      "total": 507
+    },
+    {
+      "generation": 4,
+      "added": 225,
+      "total": 732
+    },
+    {
+      "generation": 5,
+      "added": 75,
+      "total": 807
+    },
+    {
+      "generation": 6,
+      "added": 75,
+      "total": 882
+    },
+    {
+      "generation": 7,
+      "added": 7,
+      "total": 889
+    },
+    {
+      "generation": 8,
+      "added": 0,
+      "total": 889
+    }
+  ],
+  "typeCounts": {
+    "affine_orbit_theorem": 151,
+    "all_length_digit_theorem": 50,
+    "best_density_theorem": 7,
+    "coefficient_orbit_theorem": 25,
+    "density_consequence": 50,
+    "exact_negative_digit_atlas": 1,
+    "finite_construction": 302,
+    "finite_exhaustive_certificate": 302,
+    "symbolic_obstruction_theorem": 1
+  },
+  "authorityCounts": {
+    "direct_exhaustive_verification": 452,
+    "exact_coefficient_orbit_transfer": 25,
+    "exact_equivalence": 25,
+    "exact_finite_atlas_plus_lean_kernel": 1,
+    "exact_finite_comparison": 7,
+    "exact_symbolic_counting": 50,
+    "exact_symbolic_identity": 151,
+    "independent_exhaustive_certificate": 1,
+    "independent_finite_state_verification": 25,
+    "lean_kernel_checked": 1,
+    "symbolic_transfer_plus_direct_exhaustive_verification": 151
+  },
+  "applicationsAttempted": 862,
+  "deduplicated": 0,
+  "walls": [],
+  "artifactBank": "evidence/rsi-local-closure/artifacts.jsonl",
+  "artifactBankSha256": "sha256:7dcaccf695c59611f38b466848a68796935d53621b626e2fcd3863c3e6d55574",
+  "networkGuard": "socket.socket hard-disabled before closure execution",
+  "networkCalls": 0,
+  "modelCalls": 0,
+  "paidCalls": 0,
+  "costUsd": 0.0,
+  "seconds": 9.021807,
+  "claimBoundary": "Fixed point of the explicit typed rules in local-rsi-capability-graph.v1.json over the declared seed receipts. Untyped executable registry capabilities are not silently composed.",
+  "receiptHash": "sha256:cc39868906d1836d4df217cc1939997ecd664ce0de7559a9b9e96cdb68429356"
+}

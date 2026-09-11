@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "run_hashes": [
+    {
+      "CLOSE-PROGRAMS.json": "0740ae049c45f8d1af7573acc8b6c895a747d435b32d51872b679a0cae580da6",
+      "RECURSIVE-THEOREM-CARDS.jsonl": "065861f00c948e7d80352da772c56e0898e013318652c9cce131da74db5af36a",
+      "ROUND-RECEIPTS.json": "bd7d476cba7c8c089f406a712224125ba12eb03203dec9aa62b8d59240273e42"
+    },
+    {
+      "CLOSE-PROGRAMS.json": "0740ae049c45f8d1af7573acc8b6c895a747d435b32d51872b679a0cae580da6",
+      "RECURSIVE-THEOREM-CARDS.jsonl": "065861f00c948e7d80352da772c56e0898e013318652c9cce131da74db5af36a",
+      "ROUND-RECEIPTS.json": "bd7d476cba7c8c089f406a712224125ba12eb03203dec9aa62b8d59240273e42"
+    }
+  ],
+  "schema": "oracle.three-way-recursive-forge.clean-process-replay.v1"
+}

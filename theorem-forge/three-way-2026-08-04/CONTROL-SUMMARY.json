@@ -1,0 +1,140 @@
+{
+  "back_transfer_counts": {
+    "595": 5,
+    "738": 7,
+    "HYBRID": 9
+  },
+  "close_programs": {
+    "CLOSE-595": {
+      "resolved": 1,
+      "resolved_by": {
+        "maximal_layer_edge_certificates": "R:R2-STABLECERT"
+      },
+      "target": "Erdos #595",
+      "unresolved": [
+        "common_omitted_edge_structure",
+        "page_profile_canonization",
+        "countable_maximal_layer_basis",
+        "multi_link_multi_book_interaction"
+      ]
+    },
+    "CLOSE-738": {
+      "resolved": 1,
+      "resolved_by": {
+        "signature_fiber_control": "R:R1-K4FIBER"
+      },
+      "target": "Erdos #738",
+      "unresolved": [
+        "cross_fiber_gluing",
+        "two_layer_purification",
+        "finite_layer_recurrence",
+        "combined_state_classification"
+      ]
+    },
+    "CLOSE-HYBRID": {
+      "resolved": 2,
+      "resolved_by": {
+        "layer_defect_descent": "X:XLAYER04",
+        "signature_fiber_descent": "R:R1-SIGDESC"
+      },
+      "target": "Finite-layer induced-tree hierarchy",
+      "unresolved": [
+        "cross_fiber_gluing",
+        "finite_layer_recurrence",
+        "combined_state_classification"
+      ]
+    }
+  },
+  "generated_claims": 9,
+  "retracted": [],
+  "rounds": [
+    {
+      "close_unresolved_after": {
+        "CLOSE-595": 5,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "close_unresolved_before": {
+        "CLOSE-595": 5,
+        "CLOSE-738": 5,
+        "CLOSE-HYBRID": 5
+      },
+      "content_hash": "0f6fe60d974c5aa5df985e729a5d20426c21b18e14d90d37fb4e67e8b9eec7a8",
+      "duplicate_rejections": [],
+      "generated_ids": [
+        "R:R1-ESCAPEDESC",
+        "R:R1-K4FIBER",
+        "R:R1-LINKRESERVE",
+        "R:R1-MAXCONTACT",
+        "R:R1-SIBDEF",
+        "R:R1-SIGDESC",
+        "R:R1-SPIDERDESC",
+        "R:R1-TRANSIG"
+      ],
+      "inherited_claims": 174,
+      "round_no": 1,
+      "status_downgrades": []
+    },
+    {
+      "close_unresolved_after": {
+        "CLOSE-595": 4,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "close_unresolved_before": {
+        "CLOSE-595": 5,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "content_hash": "aad021b499f984f44601a6d5c73a579c0e92d13d311e139625ab95cea56b4ade",
+      "duplicate_rejections": [],
+      "generated_ids": [
+        "R:R2-STABLECERT"
+      ],
+      "inherited_claims": 182,
+      "round_no": 2,
+      "status_downgrades": []
+    },
+    {
+      "close_unresolved_after": {
+        "CLOSE-595": 4,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "close_unresolved_before": {
+        "CLOSE-595": 4,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "content_hash": "6960f50c0b0f9711d4c6147a2f010c32d7488d018f0ffd7fbe3b01c538fa6beb",
+      "duplicate_rejections": [],
+      "generated_ids": [],
+      "inherited_claims": 183,
+      "round_no": 3,
+      "status_downgrades": []
+    },
+    {
+      "close_unresolved_after": {
+        "CLOSE-595": 4,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "close_unresolved_before": {
+        "CLOSE-595": 4,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "content_hash": "88a978378be9c224267f77bf930fbf92ce57da8a4e5d9f51c797791615ba6072",
+      "duplicate_rejections": [],
+      "generated_ids": [],
+      "inherited_claims": 183,
+      "round_no": 4,
+      "status_downgrades": []
+    }
+  ],
+  "source_claims": 174,
+  "status_counts": {
+    "PROVED_IN_PACKET": 9
+  },
+  "total_claims": 183
+}

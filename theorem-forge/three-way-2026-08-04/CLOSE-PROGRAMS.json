@@ -1,0 +1,41 @@
+{
+  "CLOSE-595": {
+    "resolved": 2,
+    "resolved_by": {
+      "common_omitted_edge_structure": "R:R3-COMMONBOOK",
+      "maximal_layer_edge_certificates": "R:R2-STABLECERT"
+    },
+    "target": "Erdos #595",
+    "unresolved": [
+      "page_profile_canonization",
+      "countable_maximal_layer_basis",
+      "multi_link_multi_book_interaction"
+    ]
+  },
+  "CLOSE-738": {
+    "resolved": 1,
+    "resolved_by": {
+      "signature_fiber_control": "R:R1-K4FIBER"
+    },
+    "target": "Erdos #738",
+    "unresolved": [
+      "cross_fiber_gluing",
+      "two_layer_purification",
+      "finite_layer_recurrence",
+      "combined_state_classification"
+    ]
+  },
+  "CLOSE-HYBRID": {
+    "resolved": 2,
+    "resolved_by": {
+      "layer_defect_descent": "X:XLAYER04",
+      "signature_fiber_descent": "R:R1-SIGDESC"
+    },
+    "target": "Finite-layer induced-tree hierarchy",
+    "unresolved": [
+      "cross_fiber_gluing",
+      "finite_layer_recurrence",
+      "combined_state_classification"
+    ]
+  }
+}

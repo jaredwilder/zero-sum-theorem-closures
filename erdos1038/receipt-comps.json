@@ -1,0 +1,61 @@
+{
+ "x2-1": {
+  "measure": 2.8284256,
+  "components": 1,
+  "lengths": [
+   2.8284
+  ]
+ },
+ "(x2-1)^2": {
+  "measure": 2.8284256,
+  "components": 1,
+  "lengths": [
+   2.8284
+  ]
+ },
+ "deg7 min": {
+  "measure": 1.8716676,
+  "components": 2,
+  "lengths": [
+   0.0314,
+   1.8403
+  ]
+ },
+ "deg3 max": {
+  "measure": 2.7551326,
+  "components": 1,
+  "lengths": [
+   2.7551
+  ]
+ },
+ "deg5 max": {
+  "measure": 2.7951814,
+  "components": 2,
+  "lengths": [
+   1.0757,
+   1.7195
+  ]
+ },
+ "(x-0)^5": {
+  "measure": 1.9999992,
+  "components": 1,
+  "lengths": [
+   2.0
+  ]
+ },
+ "deg4 min": {
+  "measure": 1.9843032,
+  "components": 2,
+  "lengths": [
+   0.2676,
+   1.7167
+  ]
+ },
+ "cheb4": {
+  "measure": 2.4985276342872127,
+  "components": 1,
+  "lengths": [
+   2.4985
+  ]
+ }
+}

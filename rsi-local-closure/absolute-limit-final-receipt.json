@@ -1,0 +1,52 @@
+{
+  "schema": "oracle.local-rsi-absolute-limit.v1",
+  "createdUtc": "2026-08-04T11:10:00Z",
+  "verdict": "LOCAL_RSI_TYPED_CLOSURE_VERIFIED_AND_NATIVE_FRONTIER_RESOURCE_BOUND",
+  "passed": true,
+  "typedClosure": {
+    "producerReceipt": "evidence/rsi-local-closure/final-receipt.json",
+    "producerReceiptHash": "sha256:ba3e1245b27b90f384c08100ef478741a87b355330dd08a2f0681cf230f2b045",
+    "independentVerification": "evidence/rsi-local-closure/independent-verification.json",
+    "verificationReceiptHash": "sha256:a9732d30591f73c5c2aa0b15cfd4db6319f1d9b025e62100d9569b65dbb2f1fa",
+    "seedArtifacts": 27,
+    "productiveGenerations": 7,
+    "finalArtifacts": 889,
+    "newArtifacts": 862,
+    "directAssignmentsIndependentlyChecked": 10528320,
+    "carryTheoremsIndependentlyChecked": 50,
+    "walls": 0,
+    "saturated": true
+  },
+  "estateComposition": {
+    "registryTechniquesAtCensus": 6810,
+    "evidenceBackedResolvedExecutors": 1336,
+    "armoryTechniques": 1108,
+    "exactAdapters": 12,
+    "potentialPostAdapterEdges": 10727,
+    "compositionBusSelftest": "84/84"
+  },
+  "nativeFrontierRun": {
+    "freshReceipts": 48,
+    "optimalityProven": 15,
+    "tiedRecord": 13,
+    "validConstruction": 5,
+    "verifiedWitnessBelowKnownBound": 15,
+    "capabilityGaps": 0,
+    "newRecords": 0,
+    "haltReason": "DISK_GOVERNOR_HARD_FLOOR",
+    "freeGbAtHaltApprox": 5.5,
+    "floorGb": 12.0
+  },
+  "banking": {
+    "receipt": "evidence/rsi-local-closure/bank-receipt.json",
+    "registryIdsBefore": 6810,
+    "registryIdsAfter": 6814,
+    "added": 4,
+    "dropped": []
+  },
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "paidCalls": 0,
+  "costUsd": 0.0,
+  "claimBoundary": "The typed closure is complete for the explicit graph and seed receipts. The wider armory graph contains potential edges that require real typed payload execution before promotion. Native frontier continuation is paused by the disk governor, not mathematically saturated."
+}

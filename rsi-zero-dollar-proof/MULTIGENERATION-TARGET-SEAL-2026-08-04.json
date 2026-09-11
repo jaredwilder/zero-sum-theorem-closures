@@ -1,0 +1,37 @@
+{
+  "schema": "oracle.rsi-multigeneration-target-seal.v1",
+  "sealedUtc": "2026-08-04T10:45:00.2312138Z",
+  "purpose": "Precommit a zero-external-call recursive consequence chain before executing it.",
+  "seedTarget": {
+    "family": "zero-rhs-linear-relation-avoidance",
+    "coefficients": [-3, 1, 1, 1],
+    "base": 9,
+    "alphabet": [0, 1],
+    "wordLength": 5,
+    "semantics": "arbitrary distinct ordered tuples"
+  },
+  "generationContract": [
+    "G1 certify the sealed all-length digit-language target with two independent carry automata",
+    "G2 consume G1 and materialize then directly verify its sealed finite length-5 construction",
+    "G3 consume G2 and derive a reusable affine-image preservation compiler from the zero coefficient sum",
+    "G4 derive affine parameters only from the G3 artifact hash, consume G3, and directly verify the transformed held-out construction"
+  ],
+  "derivedParameterRule": {
+    "scale": "2 + first_byte(G3_sha256) mod 8",
+    "translation": "1 + second_byte(G3_sha256) mod 97"
+  },
+  "preRunHashes": {
+    "oracle/ledger/technique-registry.json": "sha256:84e077de54dd90772ff9d34f8009778197bf6a2387067e51be5383d89ee56485",
+    "oracle/ledger/ratchet-cross-run-ledger.json": "sha256:658b0dd0746a58ef8c0d97668c54c0a09cbba3b1a6e9a500d31768f31fe7e93c",
+    "oracle/evidence/targets/open-frontier.jsonl": "sha256:cca923e14600e4ff4367e268e955e746a18b7e7ed3e37c81d5df30f166cd793f",
+    "oracle/tools/rsi_zero_dollar_digit_batch.py": "sha256:0637a61db0db0d91e2c669e9f861ff1e8f143094678b949e3cb7557e36f59634",
+    "oracle/tools/weird_round_digit_parameter.py": "sha256:fcac3e9d1714dda7bce3bbfcca7a340c7e2bb7dbb8bdca0dd8333b42c62b7984",
+    "oracle/tools/autonomy_divorce_runner.py": "sha256:c557cf6f746ef8c020e43fafcbd52ed6395fc26e199af045297f2d78ef79a953"
+  },
+  "externalBoundary": {
+    "modelCalls": 0,
+    "networkCalls": 0,
+    "paidCalls": 0,
+    "costUsd": 0.0
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "back_transfer_counts": {
+    "595": 23,
+    "738": 21,
+    "HYBRID": 32
+  },
+  "close_programs": {
+    "CLOSE-595": {
+      "resolved": 2,
+      "resolved_by": {
+        "common_omitted_edge_structure": "R:R3-COMMONBOOK",
+        "maximal_layer_edge_certificates": "R:R2-STABLECERT"
+      },
+      "target": "Erdos #595",
+      "unresolved": [
+        "page_profile_canonization",
+        "countable_maximal_layer_basis",
+        "multi_link_multi_book_interaction"
+      ]
+    },
+    "CLOSE-738": {
+      "resolved": 1,
+      "resolved_by": {
+        "signature_fiber_control": "R:R1-K4FIBER"
+      },
+      "target": "Erdos #738",
+      "unresolved": [
+        "cross_fiber_gluing",
+        "two_layer_purification",
+        "finite_layer_recurrence",
+        "combined_state_classification"
+      ]
+    },
+    "CLOSE-HYBRID": {
+      "resolved": 2,
+      "resolved_by": {
+        "layer_defect_descent": "X:XLAYER04",
+        "signature_fiber_descent": "R:R1-SIGDESC"
+      },
+      "target": "Finite-layer induced-tree hierarchy",
+      "unresolved": [
+        "cross_fiber_gluing",
+        "finite_layer_recurrence",
+        "combined_state_classification"
+      ]
+    }
+  },
+  "generated_claims": 32,
+  "retracted": [],
+  "rounds": [
+    {
+      "close_unresolved_after": {
+        "CLOSE-595": 5,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "close_unresolved_before": {
+        "CLOSE-595": 5,
+        "CLOSE-738": 5,
+        "CLOSE-HYBRID": 5
+      },
+      "content_hash": "0f6fe60d974c5aa5df985e729a5d20426c21b18e14d90d37fb4e67e8b9eec7a8",
+      "duplicate_rejections": [],
+      "generated_ids": [
+        "R:R1-ESCAPEDESC",
+        "R:R1-K4FIBER",
+        "R:R1-LINKRESERVE",
+        "R:R1-MAXCONTACT",
+        "R:R1-SIBDEF",
+        "R:R1-SIGDESC",
+        "R:R1-SPIDERDESC",
+        "R:R1-TRANSIG"
+      ],
+      "inherited_claims": 174,
+      "round_no": 1,
+      "status_downgrades": []
+    },
+    {
+      "close_unresolved_after": {
+        "CLOSE-595": 4,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "close_unresolved_before": {
+        "CLOSE-595": 5,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "content_hash": "5f8d96700ccd63c2e2ae6a3fdfb50ac7260a6ee6cf557379b744023978bfbc43",
+      "duplicate_rejections": [],
+      "generated_ids": [
+        "R:R2-CRITABSORB",
+        "R:R2-CONTACTRED",
+        "R:R2-ROOTSPLIT",
+        "R:R2-SIGCOVEROBS",
+        "R:R2-STABLECERT",
+        "R:R2-TREESEQ",
+        "R:R2-SIGCERT",
+        "R:R2-BOOKSTERILE"
+      ],
+      "inherited_claims": 182,
+      "round_no": 2,
+      "status_downgrades": []
+    },
+    {
+      "close_unresolved_after": {
+        "CLOSE-595": 3,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "close_unresolved_before": {
+        "CLOSE-595": 4,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "content_hash": "60f0e79108762324cad54496d82d9ae8dd9f4d0df26b2f52e6659748936c2a3c",
+      "duplicate_rejections": [],
+      "generated_ids": [
+        "R:R3-COMMONBOOK",
+        "R:R3-KAPPABOOK",
+        "R:R3-FREC",
+        "R:R3-PROFILEBASIS",
+        "R:R3-TWOLAYER",
+        "R:R3-BOOKBRANCH",
+        "R:R3-BOOKCANON",
+        "R:R3-BOOKDISP"
+      ],
+      "inherited_claims": 190,
+      "round_no": 3,
+      "status_downgrades": []
+    },
+    {
+      "close_unresolved_after": {
+        "CLOSE-595": 3,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "close_unresolved_before": {
+        "CLOSE-595": 3,
+        "CLOSE-738": 4,
+        "CLOSE-HYBRID": 3
+      },
+      "content_hash": "718127472cecc44672796fb855821c97ff07db25e328d73efd8f10c696248f1a",
+      "duplicate_rejections": [],
+      "generated_ids": [
+        "R:R4-PAGECERT",
+        "R:R4-MULTIBOOK",
+        "R:R4-DOUBLESTERILE",
+        "R:R4-PAGEFAMILY",
+        "R:R4-MULTIPLIER",
+        "R:R4-PAGECOMPACT",
+        "R:R4-TRICLOSE",
+        "R:R4-CENSUS"
+      ],
+      "inherited_claims": 198,
+      "round_no": 4,
+      "status_downgrades": [
+        "R4-SINGLE-LINK-AND-BOOK-STERILITY: exact status downgraded due to conditional/search dependency"
+      ]
+    }
+  ],
+  "source_claims": 174,
+  "status_counts": {
+    "CONDITIONAL_ON_738_SEQUENCE": 1,
+    "CONDITIONAL_REDUCTION": 6,
+    "PROVED_IN_PACKET": 21,
+    "UNPROVED_CHECKABLE_TARGET": 4
+  },
+  "total_claims": 206
+}

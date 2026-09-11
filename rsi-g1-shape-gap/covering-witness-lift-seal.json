@@ -1,0 +1,51 @@
+{
+  "schema": "oracle.rsi-g1.covering-lift-seal.v1",
+  "createdUtc": "2026-08-04T11:27:57.004654+00:00",
+  "shape": "covering_design_witness",
+  "splitMethod": "fixed immutable case ids; held-out payload omitted from model prompt",
+  "train": [
+    {
+      "caseId": "train-C-4-3-2",
+      "caseHash": "sha256:774edb69a0c77a6adb45743c2b19a6c110c74f93ef69087e39fa799d06c6ce96"
+    },
+    {
+      "caseId": "train-C-5-3-2",
+      "caseHash": "sha256:c35a0fd4fdb379decac555186cb85204d7fbeb3d43b9ad41d26cdecdcbfa9786"
+    },
+    {
+      "caseId": "train-C-5-4-3",
+      "caseHash": "sha256:0792fc7019706ca74ce5b6ec1b684216c774e9f1b14cb9896ad9157ae496799d"
+    },
+    {
+      "caseId": "train-C-6-4-2",
+      "caseHash": "sha256:0f6c96aea82e5e2bd1684b9c9809e956f83cfd0368307e84eed499ccc2a558de"
+    },
+    {
+      "caseId": "train-C-6-5-3",
+      "caseHash": "sha256:90dbe906e56b57ec2d98e5cd4f7c8b964b6e294f38460ce2bf9c71e6d5186227"
+    }
+  ],
+  "heldout": [
+    {
+      "caseId": "heldout-C-6-3-2",
+      "caseHash": "sha256:ab587e3ffbad188a9233dba1b177069ab825b8509bbaa8294c2219b050408fc2"
+    },
+    {
+      "caseId": "heldout-C-6-5-4",
+      "caseHash": "sha256:c5fcdbec80521fb3953b2aaee65cb8690312806f2a6e9ec670b62ada01e67077"
+    },
+    {
+      "caseId": "heldout-C-7-4-3",
+      "caseHash": "sha256:390ffde3e82c5a18edb3c77707e335a06f698281fcd641296415f1c7b0d980a6"
+    },
+    {
+      "caseId": "heldout-C-7-5-2",
+      "caseHash": "sha256:ed893231ed19fc44095120e695e90e41461617259c2196a970d4709fa1dc743b"
+    },
+    {
+      "caseId": "heldout-C-8-6-4",
+      "caseHash": "sha256:639af1ac192404913b29d546c4c988f6eb1b089c12e23b4266d79e1cc908c7b5"
+    }
+  ],
+  "sealHash": "sha256:9e5f6c1dbdf21c22b39520e2050bf0c13007dc28d6054685d6f3e03948fac5c8"
+}

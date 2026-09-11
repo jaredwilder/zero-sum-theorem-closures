@@ -1,0 +1,1858 @@
+{
+  "schema": "oracle.rsi-g1.shape-gap-admission.v1",
+  "createdUtc": "2026-08-04T11:29:01.456025+00:00",
+  "status": "PROMOTED_REPLAY_VERIFIED",
+  "passed": true,
+  "modelRequested": "google/gemini-3.6-flash",
+  "providerModelReturned": "google/gemini-3.6-flash",
+  "fallbackAllowed": false,
+  "promptSha256": "sha256:e2e3615c91623f702227cf0435d90c1ebb1845091cec37c7dc52747db8f3bf12",
+  "sealHash": "sha256:9e5f6c1dbdf21c22b39520e2050bf0c13007dc28d6054685d6f3e03948fac5c8",
+  "rawResponse": "evidence/rsi-g1-shape-gap/covering-witness-lift-model-response.json",
+  "providerUsage": {
+    "prompt_tokens": 3470,
+    "completion_tokens": 6925,
+    "total_tokens": 10395,
+    "cost": 0.0571425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0571425,
+      "upstream_inference_prompt_cost": 0.005205,
+      "upstream_inference_completions_cost": 0.0519375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4851,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "compilerId": "G1-COVERING-LIFT-V1",
+  "qualification": {
+    "schemaPassed": true,
+    "schemaErrors": [],
+    "compilerPolicy": {
+      "passed": true,
+      "errors": [],
+      "sourceSha256": "sha256:5c8f8e0fb58dcae1ad55a703746f3b6b3466ee42d31f9a9b6506c471396f133f"
+    },
+    "verifierPolicy": {
+      "passed": true,
+      "errors": [],
+      "sourceSha256": "sha256:ae02502afe24ef5a353b27741433ed898b966e0f8802acd25d51eca182f26006"
+    },
+    "modelExact": true,
+    "train": [
+      {
+        "caseId": "train-C-4-3-2",
+        "caseHash": "sha256:774edb69a0c77a6adb45743c2b19a6c110c74f93ef69087e39fa799d06c6ce96",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 4,
+            "k": 3,
+            "t": 2
+          },
+          "target": {
+            "k": 4,
+            "t": 2,
+            "v": 5
+          },
+          "sourceBlockCount": 4,
+          "targetBlockCount": 4
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:45195d30094e536eab73067dbf5ea653e26953a084e2763dc9dea2aa8becb4fb",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              4
+            ],
+            [
+              0,
+              1,
+              3,
+              4
+            ],
+            [
+              0,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 4,
+            "t": 2,
+            "v": 5
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "train-C-4-3-2",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      },
+      {
+        "caseId": "train-C-5-3-2",
+        "caseHash": "sha256:c35a0fd4fdb379decac555186cb85204d7fbeb3d43b9ad41d26cdecdcbfa9786",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 5,
+            "k": 3,
+            "t": 2
+          },
+          "target": {
+            "k": 4,
+            "t": 2,
+            "v": 6
+          },
+          "sourceBlockCount": 10,
+          "targetBlockCount": 10
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:47fefae41146be7d6915cae3347523766610b3e480ed43f7f201cf6f14b28b2d",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              5
+            ],
+            [
+              0,
+              1,
+              3,
+              5
+            ],
+            [
+              0,
+              1,
+              4,
+              5
+            ],
+            [
+              0,
+              2,
+              3,
+              5
+            ],
+            [
+              0,
+              2,
+              4,
+              5
+            ],
+            [
+              0,
+              3,
+              4,
+              5
+            ],
+            [
+              1,
+              2,
+              3,
+              5
+            ],
+            [
+              1,
+              2,
+              4,
+              5
+            ],
+            [
+              1,
+              3,
+              4,
+              5
+            ],
+            [
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 4,
+            "t": 2,
+            "v": 6
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "train-C-5-3-2",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      },
+      {
+        "caseId": "train-C-5-4-3",
+        "caseHash": "sha256:0792fc7019706ca74ce5b6ec1b684216c774e9f1b14cb9896ad9157ae496799d",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 5,
+            "k": 4,
+            "t": 3
+          },
+          "target": {
+            "k": 5,
+            "t": 3,
+            "v": 6
+          },
+          "sourceBlockCount": 5,
+          "targetBlockCount": 5
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:02e1087fad85083acb24f6f07c9bcd47aaeb151c1c27f1ffce71f8999140ec55",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              3,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 5,
+            "t": 3,
+            "v": 6
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "train-C-5-4-3",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      },
+      {
+        "caseId": "train-C-6-4-2",
+        "caseHash": "sha256:0f6c96aea82e5e2bd1684b9c9809e956f83cfd0368307e84eed499ccc2a558de",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 6,
+            "k": 4,
+            "t": 2
+          },
+          "target": {
+            "k": 5,
+            "t": 2,
+            "v": 7
+          },
+          "sourceBlockCount": 15,
+          "targetBlockCount": 15
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:561a8ee8f8ae1b7563eca72baa13666739768b6d25ce7b2fb047b424d029975a",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              2,
+              3,
+              5,
+              6
+            ],
+            [
+              0,
+              2,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 5,
+            "t": 2,
+            "v": 7
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "train-C-6-4-2",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      },
+      {
+        "caseId": "train-C-6-5-3",
+        "caseHash": "sha256:90dbe906e56b57ec2d98e5cd4f7c8b964b6e294f38460ce2bf9c71e6d5186227",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 6,
+            "k": 5,
+            "t": 3
+          },
+          "target": {
+            "k": 6,
+            "t": 3,
+            "v": 7
+          },
+          "sourceBlockCount": 6,
+          "targetBlockCount": 6
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:4c1055f75136e00d3d5c19835ed14c6d8d2d572a51653c18dfedc2f975ebe6b7",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 6,
+            "t": 3,
+            "v": 7
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "train-C-6-5-3",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      }
+    ],
+    "heldout": [
+      {
+        "caseId": "heldout-C-6-3-2",
+        "caseHash": "sha256:ab587e3ffbad188a9233dba1b177069ab825b8509bbaa8294c2219b050408fc2",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 6,
+            "k": 3,
+            "t": 2
+          },
+          "target": {
+            "k": 4,
+            "t": 2,
+            "v": 7
+          },
+          "sourceBlockCount": 20,
+          "targetBlockCount": 20
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:65a2893b44b9834bd4d07e584bcdaf03ba811f6c351dd733cc2cd94cfa32392a",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              5,
+              6
+            ],
+            [
+              0,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              2,
+              5,
+              6
+            ],
+            [
+              0,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              5,
+              6
+            ],
+            [
+              0,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              1,
+              2,
+              4,
+              6
+            ],
+            [
+              1,
+              2,
+              5,
+              6
+            ],
+            [
+              1,
+              3,
+              4,
+              6
+            ],
+            [
+              1,
+              3,
+              5,
+              6
+            ],
+            [
+              1,
+              4,
+              5,
+              6
+            ],
+            [
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              2,
+              3,
+              5,
+              6
+            ],
+            [
+              2,
+              4,
+              5,
+              6
+            ],
+            [
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 4,
+            "t": 2,
+            "v": 7
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "heldout-C-6-3-2",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      },
+      {
+        "caseId": "heldout-C-6-5-4",
+        "caseHash": "sha256:c5fcdbec80521fb3953b2aaee65cb8690312806f2a6e9ec670b62ada01e67077",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 6,
+            "k": 5,
+            "t": 4
+          },
+          "target": {
+            "k": 6,
+            "t": 4,
+            "v": 7
+          },
+          "sourceBlockCount": 6,
+          "targetBlockCount": 6
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:dbf51a504852093993e0235384084b386d320b7dd9652d2a80c9c96255198b8e",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 6,
+            "t": 4,
+            "v": 7
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "heldout-C-6-5-4",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      },
+      {
+        "caseId": "heldout-C-7-4-3",
+        "caseHash": "sha256:390ffde3e82c5a18edb3c77707e335a06f698281fcd641296415f1c7b0d980a6",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 7,
+            "k": 4,
+            "t": 3
+          },
+          "target": {
+            "k": 5,
+            "t": 3,
+            "v": 8
+          },
+          "sourceBlockCount": 35,
+          "targetBlockCount": 35
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:34066b61e8e9bf431aee2e28a4cb29b13131f5de37d898073913c0bcb76acd2a",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              3,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              7
+            ],
+            [
+              0,
+              2,
+              3,
+              5,
+              7
+            ],
+            [
+              0,
+              2,
+              3,
+              6,
+              7
+            ],
+            [
+              0,
+              2,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              2,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              2,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              3,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              7
+            ],
+            [
+              1,
+              2,
+              3,
+              5,
+              7
+            ],
+            [
+              1,
+              2,
+              3,
+              6,
+              7
+            ],
+            [
+              1,
+              2,
+              4,
+              5,
+              7
+            ],
+            [
+              1,
+              2,
+              4,
+              6,
+              7
+            ],
+            [
+              1,
+              2,
+              5,
+              6,
+              7
+            ],
+            [
+              1,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              1,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              1,
+              3,
+              5,
+              6,
+              7
+            ],
+            [
+              1,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            [
+              2,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 5,
+            "t": 3,
+            "v": 8
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "heldout-C-7-4-3",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      },
+      {
+        "caseId": "heldout-C-7-5-2",
+        "caseHash": "sha256:ed893231ed19fc44095120e695e90e41461617259c2196a970d4709fa1dc743b",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 7,
+            "k": 5,
+            "t": 2
+          },
+          "target": {
+            "k": 6,
+            "t": 2,
+            "v": 8
+          },
+          "sourceBlockCount": 21,
+          "targetBlockCount": 21
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:bb7bf3c4aeb2123157a09172321551deda59e0f885fb451ba20acdfc821a88aa",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              2,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            [
+              1,
+              2,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              1,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 6,
+            "t": 2,
+            "v": 8
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "heldout-C-7-5-2",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      },
+      {
+        "caseId": "heldout-C-8-6-4",
+        "caseHash": "sha256:639af1ac192404913b29d546c4c988f6eb1b089c12e23b4266d79e1cc908c7b5",
+        "passed": true,
+        "hostAssessment": {
+          "passed": true,
+          "errors": [],
+          "source": {
+            "v": 8,
+            "k": 6,
+            "t": 4
+          },
+          "target": {
+            "k": 7,
+            "t": 4,
+            "v": 9
+          },
+          "sourceBlockCount": 28,
+          "targetBlockCount": 28
+        },
+        "generatedVerifier": {
+          "errors": [],
+          "passed": true
+        },
+        "mutations": [
+          {
+            "mutation": "out_of_range_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "short_block",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "duplicate_point",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          },
+          {
+            "mutation": "catastrophically_incomplete",
+            "hostRejects": true,
+            "generatedVerifierRejects": true,
+            "passed": true
+          }
+        ],
+        "candidateHash": "sha256:a31ca3fc2bfd1cc6da3464df7b5e0489daa1c24a3421f77e034306691df6b25b",
+        "candidate": {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              5,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              5,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              4,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              5,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              3,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          ],
+          "claimBoundary": "Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.",
+          "family": "covering_design",
+          "params": {
+            "k": 7,
+            "t": 4,
+            "v": 9
+          },
+          "provenance": {
+            "compiler_id": "G1-COVERING-LIFT-V1",
+            "input_case_id": "heldout-C-8-6-4",
+            "transformation": "point_extension_v_plus_1"
+          }
+        }
+      }
+    ],
+    "executionError": null
+  },
+  "promotion": {
+    "compilerId": "G1-COVERING-LIFT-V1",
+    "techniqueId": "T-G1-COVERING-LIFT-V1",
+    "manifest": "canon/rsi-compilers/G1-COVERING-LIFT-V1/manifest.json",
+    "compilerRegistryBefore": 0,
+    "compilerRegistryAfter": 1,
+    "compilerRegistryIdsPreserved": true,
+    "techniqueRegistryWrite": {
+      "path": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\ledger\\technique-registry.json",
+      "key": "techniques",
+      "ids_before": 6814,
+      "ids_after": 6815,
+      "added": 1,
+      "dropped": []
+    }
+  },
+  "receiptHash": "sha256:6120d764f3cab1613762e5a7b42bdd72a2916e8d34386d97b136c34f629c748f"
+}

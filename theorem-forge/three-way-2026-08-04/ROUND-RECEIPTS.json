@@ -1,0 +1,112 @@
+[
+  {
+    "close_unresolved_after": {
+      "CLOSE-595": 5,
+      "CLOSE-738": 4,
+      "CLOSE-HYBRID": 3
+    },
+    "close_unresolved_before": {
+      "CLOSE-595": 5,
+      "CLOSE-738": 5,
+      "CLOSE-HYBRID": 5
+    },
+    "content_hash": "0f6fe60d974c5aa5df985e729a5d20426c21b18e14d90d37fb4e67e8b9eec7a8",
+    "duplicate_rejections": [],
+    "generated_ids": [
+      "R:R1-ESCAPEDESC",
+      "R:R1-K4FIBER",
+      "R:R1-LINKRESERVE",
+      "R:R1-MAXCONTACT",
+      "R:R1-SIBDEF",
+      "R:R1-SIGDESC",
+      "R:R1-SPIDERDESC",
+      "R:R1-TRANSIG"
+    ],
+    "inherited_claims": 174,
+    "round_no": 1,
+    "status_downgrades": []
+  },
+  {
+    "close_unresolved_after": {
+      "CLOSE-595": 4,
+      "CLOSE-738": 4,
+      "CLOSE-HYBRID": 3
+    },
+    "close_unresolved_before": {
+      "CLOSE-595": 5,
+      "CLOSE-738": 4,
+      "CLOSE-HYBRID": 3
+    },
+    "content_hash": "5f8d96700ccd63c2e2ae6a3fdfb50ac7260a6ee6cf557379b744023978bfbc43",
+    "duplicate_rejections": [],
+    "generated_ids": [
+      "R:R2-CRITABSORB",
+      "R:R2-CONTACTRED",
+      "R:R2-ROOTSPLIT",
+      "R:R2-SIGCOVEROBS",
+      "R:R2-STABLECERT",
+      "R:R2-TREESEQ",
+      "R:R2-SIGCERT",
+      "R:R2-BOOKSTERILE"
+    ],
+    "inherited_claims": 182,
+    "round_no": 2,
+    "status_downgrades": []
+  },
+  {
+    "close_unresolved_after": {
+      "CLOSE-595": 3,
+      "CLOSE-738": 4,
+      "CLOSE-HYBRID": 3
+    },
+    "close_unresolved_before": {
+      "CLOSE-595": 4,
+      "CLOSE-738": 4,
+      "CLOSE-HYBRID": 3
+    },
+    "content_hash": "60f0e79108762324cad54496d82d9ae8dd9f4d0df26b2f52e6659748936c2a3c",
+    "duplicate_rejections": [],
+    "generated_ids": [
+      "R:R3-COMMONBOOK",
+      "R:R3-KAPPABOOK",
+      "R:R3-FREC",
+      "R:R3-PROFILEBASIS",
+      "R:R3-TWOLAYER",
+      "R:R3-BOOKBRANCH",
+      "R:R3-BOOKCANON",
+      "R:R3-BOOKDISP"
+    ],
+    "inherited_claims": 190,
+    "round_no": 3,
+    "status_downgrades": []
+  },
+  {
+    "close_unresolved_after": {
+      "CLOSE-595": 3,
+      "CLOSE-738": 4,
+      "CLOSE-HYBRID": 3
+    },
+    "close_unresolved_before": {
+      "CLOSE-595": 3,
+      "CLOSE-738": 4,
+      "CLOSE-HYBRID": 3
+    },
+    "content_hash": "718127472cecc44672796fb855821c97ff07db25e328d73efd8f10c696248f1a",
+    "duplicate_rejections": [],
+    "generated_ids": [
+      "R:R4-PAGECERT",
+      "R:R4-MULTIBOOK",
+      "R:R4-DOUBLESTERILE",
+      "R:R4-PAGEFAMILY",
+      "R:R4-MULTIPLIER",
+      "R:R4-PAGECOMPACT",
+      "R:R4-TRICLOSE",
+      "R:R4-CENSUS"
+    ],
+    "inherited_claims": 198,
+    "round_no": 4,
+    "status_downgrades": [
+      "R4-SINGLE-LINK-AND-BOOK-STERILITY: exact status downgraded due to conditional/search dependency"
+    ]
+  }
+]

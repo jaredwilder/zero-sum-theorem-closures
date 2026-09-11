@@ -1,0 +1,1114 @@
+{
+  "schema": "oracle.rsi-zero-dollar-digit-batch.v1",
+  "createdUtc": "2026-08-04T10:32:30.817122+00:00",
+  "verdict": "ZERO_DOLLAR_RSI_BATCH_PROVED",
+  "passed": true,
+  "targetSeal": "evidence/rsi-zero-dollar-proof/DIGIT-CARRY-BATCH-TARGET-SEAL-2026-08-04.json",
+  "targetSealSha256": "sha256:1e11359638fc48f4e7a1c271f4ff406aecadaa8fc6903807f14e3084b61c491a",
+  "registryShaBefore": "sha256:84e077de54dd90772ff9d34f8009778197bf6a2387067e51be5383d89ee56485",
+  "registryShaAfter": "sha256:84e077de54dd90772ff9d34f8009778197bf6a2387067e51be5383d89ee56485",
+  "bankedTechniques": [
+    {
+      "id": "T-GOLD-OCG-049",
+      "entryHash": "sha256:a85cc0df208a992138dd727d6f2e9b0749cfbf1922d81a7b580f436b4380ca96"
+    },
+    {
+      "id": "T-WEIRD-OWR-029",
+      "entryHash": "sha256:e9aed54b576bd9471a994de93500d4cc722264c97546b879a9a69f5a89bc5cb5"
+    },
+    {
+      "id": "T-WEIRD-OWR-036",
+      "entryHash": "sha256:7ecc11d1c2d5a640cfbf35492c5885824b02fb35d646a966ed4d371e4894f96d"
+    },
+    {
+      "id": "T-WEIRD-OWR-048",
+      "entryHash": "sha256:972229fd9a1a3e7ca2854765ff641bf4aef73d4599a243b00c0bcb0f2d9a3b4f"
+    }
+  ],
+  "baseline": {
+    "status": "SAFE_REFUSAL_NO_ALL_LENGTH_DECIDER",
+    "allLengthTheoremsProduced": 0,
+    "modelCalls": 0,
+    "networkCalls": 0,
+    "costUsd": 0.0
+  },
+  "rsiArm": {
+    "status": "CERTIFIED_EXACT_FIXED_ALPHABET_ATLASES",
+    "nontrivialAllLengthConstructionsProduced": 7,
+    "exactNegativeBoundariesProduced": 1
+  },
+  "causalAblations": [
+    {
+      "removed": "T-GOLD-OCG-049",
+      "effect": "no stable quotient identity for scaled/permuted coefficient classes"
+    },
+    {
+      "removed": "T-WEIRD-OWR-029",
+      "effect": "no exact all-length carry/mask decision"
+    },
+    {
+      "removed": "exact alphabet enumeration",
+      "effect": "valid constructions may remain, but maximality in each base is lost"
+    }
+  ],
+  "targets": [
+    {
+      "targetId": "rsi-digit-0be50f1e92d9c2746bb1",
+      "coefficients": [
+        -7,
+        1,
+        2,
+        4
+      ],
+      "semantics": "zero-rhs relation on pairwise-distinct arbitrary ordered tuples",
+      "baseRange": [
+        3,
+        8
+      ],
+      "perBaseExactAtlas": [
+        {
+          "base": 3,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 3,
+          "candidateAlphabetsTested": 4,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 4
+        },
+        {
+          "base": 4,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 7,
+          "candidateAlphabetsTested": 8,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 8
+        },
+        {
+          "base": 5,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 15,
+          "candidateAlphabetsTested": 16,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 16
+        },
+        {
+          "base": 6,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 31,
+          "candidateAlphabetsTested": 32,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 32
+        },
+        {
+          "base": 7,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3562071871080222,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 57,
+          "candidateAlphabetsTested": 58,
+          "primaryStatesVisited": 6,
+          "secondaryStatesVisited": 6,
+          "differentialChecks": 58
+        },
+        {
+          "base": 8,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.33333333333333337,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 120,
+          "candidateAlphabetsTested": 121,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 121
+        }
+      ],
+      "bestConstruction": {
+        "base": 7,
+        "maximumNormalizedAlphabetCardinality": 2,
+        "winningAlphabet": [
+          0,
+          1
+        ],
+        "densityExponent": 0.3562071871080222,
+        "allLargerNormalizedAlphabetsRejected": true,
+        "rejectedLargerAlphabetCount": 57,
+        "candidateAlphabetsTested": 58,
+        "primaryStatesVisited": 6,
+        "secondaryStatesVisited": 6,
+        "differentialChecks": 58
+      },
+      "directIndependentAudit": {
+        "wordLength": 2,
+        "numbers": [
+          0,
+          1,
+          7,
+          8
+        ],
+        "orderedDistinctAssignmentsChecked": 24,
+        "firstViolation": null,
+        "passed": true
+      },
+      "allLengthCountingTheorem": "For every m>=1, the winning alphabet yields exactly |D|^m distinct integers in [0,B^m), and no pairwise-distinct ordered tuple from that language satisfies sum c_i*x_i=0."
+    },
+    {
+      "targetId": "rsi-digit-19282925aa02b42b8a8a",
+      "coefficients": [
+        -3,
+        1,
+        1,
+        1
+      ],
+      "semantics": "zero-rhs relation on pairwise-distinct arbitrary ordered tuples",
+      "baseRange": [
+        3,
+        8
+      ],
+      "perBaseExactAtlas": [
+        {
+          "base": 3,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 3,
+          "candidateAlphabetsTested": 4,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 4
+        },
+        {
+          "base": 4,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.5,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 4,
+          "candidateAlphabetsTested": 5,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 5
+        },
+        {
+          "base": 5,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.43067655807339306,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 11,
+          "candidateAlphabetsTested": 12,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 12
+        },
+        {
+          "base": 6,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3868528072345416,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 26,
+          "candidateAlphabetsTested": 27,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 27
+        },
+        {
+          "base": 7,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3562071871080222,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 57,
+          "candidateAlphabetsTested": 58,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 58
+        },
+        {
+          "base": 8,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.33333333333333337,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 120,
+          "candidateAlphabetsTested": 121,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 121
+        }
+      ],
+      "bestConstruction": {
+        "base": 4,
+        "maximumNormalizedAlphabetCardinality": 2,
+        "winningAlphabet": [
+          0,
+          1
+        ],
+        "densityExponent": 0.5,
+        "allLargerNormalizedAlphabetsRejected": true,
+        "rejectedLargerAlphabetCount": 4,
+        "candidateAlphabetsTested": 5,
+        "primaryStatesVisited": 1,
+        "secondaryStatesVisited": 1,
+        "differentialChecks": 5
+      },
+      "directIndependentAudit": {
+        "wordLength": 2,
+        "numbers": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "orderedDistinctAssignmentsChecked": 24,
+        "firstViolation": null,
+        "passed": true
+      },
+      "allLengthCountingTheorem": "For every m>=1, the winning alphabet yields exactly |D|^m distinct integers in [0,B^m), and no pairwise-distinct ordered tuple from that language satisfies sum c_i*x_i=0."
+    },
+    {
+      "targetId": "rsi-digit-98921d61009e3686b45c",
+      "coefficients": [
+        -4,
+        -1,
+        2,
+        3
+      ],
+      "semantics": "zero-rhs relation on pairwise-distinct arbitrary ordered tuples",
+      "baseRange": [
+        3,
+        8
+      ],
+      "perBaseExactAtlas": [
+        {
+          "base": 3,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 3,
+          "candidateAlphabetsTested": 4,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 4
+        },
+        {
+          "base": 4,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 7,
+          "candidateAlphabetsTested": 8,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 8
+        },
+        {
+          "base": 5,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 15,
+          "candidateAlphabetsTested": 16,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 16
+        },
+        {
+          "base": 6,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3868528072345416,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 26,
+          "candidateAlphabetsTested": 27,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 27
+        },
+        {
+          "base": 7,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3562071871080222,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 57,
+          "candidateAlphabetsTested": 58,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 58
+        },
+        {
+          "base": 8,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.33333333333333337,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 120,
+          "candidateAlphabetsTested": 121,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 121
+        }
+      ],
+      "bestConstruction": {
+        "base": 6,
+        "maximumNormalizedAlphabetCardinality": 2,
+        "winningAlphabet": [
+          0,
+          1
+        ],
+        "densityExponent": 0.3868528072345416,
+        "allLargerNormalizedAlphabetsRejected": true,
+        "rejectedLargerAlphabetCount": 26,
+        "candidateAlphabetsTested": 27,
+        "primaryStatesVisited": 1,
+        "secondaryStatesVisited": 1,
+        "differentialChecks": 27
+      },
+      "directIndependentAudit": {
+        "wordLength": 2,
+        "numbers": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "orderedDistinctAssignmentsChecked": 24,
+        "firstViolation": null,
+        "passed": true
+      },
+      "allLengthCountingTheorem": "For every m>=1, the winning alphabet yields exactly |D|^m distinct integers in [0,B^m), and no pairwise-distinct ordered tuple from that language satisfies sum c_i*x_i=0."
+    },
+    {
+      "targetId": "rsi-digit-a152fec4b5857063b0d7",
+      "coefficients": [
+        -3,
+        -2,
+        2,
+        3
+      ],
+      "semantics": "zero-rhs relation on pairwise-distinct arbitrary ordered tuples",
+      "baseRange": [
+        3,
+        8
+      ],
+      "perBaseExactAtlas": [
+        {
+          "base": 3,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 3,
+          "candidateAlphabetsTested": 4,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 4
+        },
+        {
+          "base": 4,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.5,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 4,
+          "candidateAlphabetsTested": 5,
+          "primaryStatesVisited": 2,
+          "secondaryStatesVisited": 2,
+          "differentialChecks": 5
+        },
+        {
+          "base": 5,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 15,
+          "candidateAlphabetsTested": 16,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 16
+        },
+        {
+          "base": 6,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3868528072345416,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 26,
+          "candidateAlphabetsTested": 27,
+          "primaryStatesVisited": 2,
+          "secondaryStatesVisited": 2,
+          "differentialChecks": 27
+        },
+        {
+          "base": 7,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3562071871080222,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 57,
+          "candidateAlphabetsTested": 58,
+          "primaryStatesVisited": 2,
+          "secondaryStatesVisited": 2,
+          "differentialChecks": 58
+        },
+        {
+          "base": 8,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.33333333333333337,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 120,
+          "candidateAlphabetsTested": 121,
+          "primaryStatesVisited": 2,
+          "secondaryStatesVisited": 2,
+          "differentialChecks": 121
+        }
+      ],
+      "bestConstruction": {
+        "base": 4,
+        "maximumNormalizedAlphabetCardinality": 2,
+        "winningAlphabet": [
+          0,
+          1
+        ],
+        "densityExponent": 0.5,
+        "allLargerNormalizedAlphabetsRejected": true,
+        "rejectedLargerAlphabetCount": 4,
+        "candidateAlphabetsTested": 5,
+        "primaryStatesVisited": 2,
+        "secondaryStatesVisited": 2,
+        "differentialChecks": 5
+      },
+      "directIndependentAudit": {
+        "wordLength": 2,
+        "numbers": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "orderedDistinctAssignmentsChecked": 24,
+        "firstViolation": null,
+        "passed": true
+      },
+      "allLengthCountingTheorem": "For every m>=1, the winning alphabet yields exactly |D|^m distinct integers in [0,B^m), and no pairwise-distinct ordered tuple from that language satisfies sum c_i*x_i=0."
+    },
+    {
+      "targetId": "rsi-digit-90b6b0723d958f29bb91",
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "semantics": "zero-rhs relation on pairwise-distinct arbitrary ordered tuples",
+      "baseRange": [
+        3,
+        8
+      ],
+      "perBaseExactAtlas": [
+        {
+          "base": 3,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 3,
+          "candidateAlphabetsTested": 4,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 4
+        },
+        {
+          "base": 4,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 7,
+          "candidateAlphabetsTested": 8,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 8
+        },
+        {
+          "base": 5,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 15,
+          "candidateAlphabetsTested": 16,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 16
+        },
+        {
+          "base": 6,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 31,
+          "candidateAlphabetsTested": 32,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 32
+        },
+        {
+          "base": 7,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 63,
+          "candidateAlphabetsTested": 64,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 64
+        },
+        {
+          "base": 8,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 127,
+          "candidateAlphabetsTested": 128,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 128
+        }
+      ],
+      "bestConstruction": {
+        "base": 3,
+        "maximumNormalizedAlphabetCardinality": 1,
+        "winningAlphabet": [
+          0
+        ],
+        "densityExponent": 0.0,
+        "allLargerNormalizedAlphabetsRejected": true,
+        "rejectedLargerAlphabetCount": 3,
+        "candidateAlphabetsTested": 4,
+        "primaryStatesVisited": 1,
+        "secondaryStatesVisited": 1,
+        "differentialChecks": 4
+      },
+      "directIndependentAudit": {
+        "wordLength": 2,
+        "numbers": [
+          0
+        ],
+        "orderedDistinctAssignmentsChecked": 0,
+        "firstViolation": null,
+        "passed": true
+      },
+      "allLengthCountingTheorem": "For every m>=1, the winning alphabet yields exactly |D|^m distinct integers in [0,B^m), and no pairwise-distinct ordered tuple from that language satisfies sum c_i*x_i=0."
+    },
+    {
+      "targetId": "rsi-digit-d8837d2b31d0b4f4038c",
+      "coefficients": [
+        -3,
+        -1,
+        2,
+        2
+      ],
+      "semantics": "zero-rhs relation on pairwise-distinct arbitrary ordered tuples",
+      "baseRange": [
+        3,
+        8
+      ],
+      "perBaseExactAtlas": [
+        {
+          "base": 3,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 3,
+          "candidateAlphabetsTested": 4,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 4
+        },
+        {
+          "base": 4,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 7,
+          "candidateAlphabetsTested": 8,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 8
+        },
+        {
+          "base": 5,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.43067655807339306,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 11,
+          "candidateAlphabetsTested": 12,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 12
+        },
+        {
+          "base": 6,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3868528072345416,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 26,
+          "candidateAlphabetsTested": 27,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 27
+        },
+        {
+          "base": 7,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3562071871080222,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 57,
+          "candidateAlphabetsTested": 58,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 58
+        },
+        {
+          "base": 8,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.33333333333333337,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 120,
+          "candidateAlphabetsTested": 121,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 121
+        }
+      ],
+      "bestConstruction": {
+        "base": 5,
+        "maximumNormalizedAlphabetCardinality": 2,
+        "winningAlphabet": [
+          0,
+          1
+        ],
+        "densityExponent": 0.43067655807339306,
+        "allLargerNormalizedAlphabetsRejected": true,
+        "rejectedLargerAlphabetCount": 11,
+        "candidateAlphabetsTested": 12,
+        "primaryStatesVisited": 1,
+        "secondaryStatesVisited": 1,
+        "differentialChecks": 12
+      },
+      "directIndependentAudit": {
+        "wordLength": 2,
+        "numbers": [
+          0,
+          1,
+          5,
+          6
+        ],
+        "orderedDistinctAssignmentsChecked": 24,
+        "firstViolation": null,
+        "passed": true
+      },
+      "allLengthCountingTheorem": "For every m>=1, the winning alphabet yields exactly |D|^m distinct integers in [0,B^m), and no pairwise-distinct ordered tuple from that language satisfies sum c_i*x_i=0."
+    },
+    {
+      "targetId": "rsi-digit-0f7cdaea8f2f19c4907a",
+      "coefficients": [
+        -6,
+        1,
+        2,
+        3
+      ],
+      "semantics": "zero-rhs relation on pairwise-distinct arbitrary ordered tuples",
+      "baseRange": [
+        3,
+        8
+      ],
+      "perBaseExactAtlas": [
+        {
+          "base": 3,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 3,
+          "candidateAlphabetsTested": 4,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 4
+        },
+        {
+          "base": 4,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 7,
+          "candidateAlphabetsTested": 8,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 8
+        },
+        {
+          "base": 5,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 15,
+          "candidateAlphabetsTested": 16,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 16
+        },
+        {
+          "base": 6,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3868528072345416,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 26,
+          "candidateAlphabetsTested": 27,
+          "primaryStatesVisited": 6,
+          "secondaryStatesVisited": 6,
+          "differentialChecks": 27
+        },
+        {
+          "base": 7,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3562071871080222,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 57,
+          "candidateAlphabetsTested": 58,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 58
+        },
+        {
+          "base": 8,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.33333333333333337,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 120,
+          "candidateAlphabetsTested": 121,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 121
+        }
+      ],
+      "bestConstruction": {
+        "base": 6,
+        "maximumNormalizedAlphabetCardinality": 2,
+        "winningAlphabet": [
+          0,
+          1
+        ],
+        "densityExponent": 0.3868528072345416,
+        "allLargerNormalizedAlphabetsRejected": true,
+        "rejectedLargerAlphabetCount": 26,
+        "candidateAlphabetsTested": 27,
+        "primaryStatesVisited": 6,
+        "secondaryStatesVisited": 6,
+        "differentialChecks": 27
+      },
+      "directIndependentAudit": {
+        "wordLength": 2,
+        "numbers": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "orderedDistinctAssignmentsChecked": 24,
+        "firstViolation": null,
+        "passed": true
+      },
+      "allLengthCountingTheorem": "For every m>=1, the winning alphabet yields exactly |D|^m distinct integers in [0,B^m), and no pairwise-distinct ordered tuple from that language satisfies sum c_i*x_i=0."
+    },
+    {
+      "targetId": "rsi-digit-43b3b3f0942bdab8ddf8",
+      "coefficients": [
+        -7,
+        1,
+        3,
+        3
+      ],
+      "semantics": "zero-rhs relation on pairwise-distinct arbitrary ordered tuples",
+      "baseRange": [
+        3,
+        8
+      ],
+      "perBaseExactAtlas": [
+        {
+          "base": 3,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 3,
+          "candidateAlphabetsTested": 4,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 4
+        },
+        {
+          "base": 4,
+          "maximumNormalizedAlphabetCardinality": 1,
+          "winningAlphabet": [
+            0
+          ],
+          "densityExponent": 0.0,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 7,
+          "candidateAlphabetsTested": 8,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 8
+        },
+        {
+          "base": 5,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.43067655807339306,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 11,
+          "candidateAlphabetsTested": 12,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 12
+        },
+        {
+          "base": 6,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3868528072345416,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 26,
+          "candidateAlphabetsTested": 27,
+          "primaryStatesVisited": 6,
+          "secondaryStatesVisited": 6,
+          "differentialChecks": 27
+        },
+        {
+          "base": 7,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.3562071871080222,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 57,
+          "candidateAlphabetsTested": 58,
+          "primaryStatesVisited": 6,
+          "secondaryStatesVisited": 6,
+          "differentialChecks": 58
+        },
+        {
+          "base": 8,
+          "maximumNormalizedAlphabetCardinality": 2,
+          "winningAlphabet": [
+            0,
+            1
+          ],
+          "densityExponent": 0.33333333333333337,
+          "allLargerNormalizedAlphabetsRejected": true,
+          "rejectedLargerAlphabetCount": 120,
+          "candidateAlphabetsTested": 121,
+          "primaryStatesVisited": 1,
+          "secondaryStatesVisited": 1,
+          "differentialChecks": 121
+        }
+      ],
+      "bestConstruction": {
+        "base": 5,
+        "maximumNormalizedAlphabetCardinality": 2,
+        "winningAlphabet": [
+          0,
+          1
+        ],
+        "densityExponent": 0.43067655807339306,
+        "allLargerNormalizedAlphabetsRejected": true,
+        "rejectedLargerAlphabetCount": 11,
+        "candidateAlphabetsTested": 12,
+        "primaryStatesVisited": 1,
+        "secondaryStatesVisited": 1,
+        "differentialChecks": 12
+      },
+      "directIndependentAudit": {
+        "wordLength": 2,
+        "numbers": [
+          0,
+          1,
+          5,
+          6
+        ],
+        "orderedDistinctAssignmentsChecked": 24,
+        "firstViolation": null,
+        "passed": true
+      },
+      "allLengthCountingTheorem": "For every m>=1, the winning alphabet yields exactly |D|^m distinct integers in [0,B^m), and no pairwise-distinct ordered tuple from that language satisfies sum c_i*x_i=0."
+    }
+  ],
+  "candidateAlphabetsTested": 1877,
+  "independentDifferentialChecks": 1877,
+  "positiveConstructionCount": 7,
+  "exactNegativeBoundaryCount": 1,
+  "executionSeconds": 1.452279000019189,
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "paidCalls": 0,
+  "costUsd": 0.0,
+  "executor": "oracle/tools/rsi_zero_dollar_digit_batch.py",
+  "executorSha256": "sha256:0637a61db0db0d91e2c669e9f861ff1e8f143094678b949e3cb7557e36f59634",
+  "claimBoundary": "Exact only for normalized memoryless fixed digit alphabets over bases 3..8; construction validity is all-length, but global density optimality and historical novelty are not claimed.",
+  "receiptHash": "sha256:c2abe0742851a47728edd75d96513c5c05749deea7ed0a2068663c35b18bccdb"
+}

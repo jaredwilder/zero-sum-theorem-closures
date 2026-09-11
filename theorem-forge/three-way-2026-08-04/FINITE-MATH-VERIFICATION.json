@@ -1,0 +1,19 @@
+{
+  "assertions": 35502,
+  "checked_claims": [
+    "R1-K4FIBER",
+    "R1-SIGDESC (m=2 finite boundary)",
+    "R2-STABLECERT",
+    "R2-BOOKSTERILE",
+    "R3-COMMONBOOK finite-family boundary",
+    "R4-PAGECERT"
+  ],
+  "k4_free_graphs_checked": 1032,
+  "max_vertices": 5,
+  "maximal_layer_family_checks": 7185,
+  "maximal_layers_checked": 3220,
+  "passed": true,
+  "schema": "oracle.three-way-recursive-forge.finite-math.v1",
+  "scope_note": "Finite exhaustion supports the exact finite kernels only; it does not certify the infinite/cardinal flagship claims.",
+  "signature_fiber_checks": 6438
+}

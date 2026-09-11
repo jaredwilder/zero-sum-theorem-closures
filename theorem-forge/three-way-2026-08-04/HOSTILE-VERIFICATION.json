@@ -1,0 +1,31 @@
+{
+  "invalidated_by_retraction": [
+    "R:R2-SIGCERT",
+    "R:R2-BOOKSTERILE",
+    "R:R3-COMMONBOOK",
+    "R:R3-KAPPABOOK",
+    "R:R3-PROFILEBASIS",
+    "R:R3-BOOKBRANCH",
+    "R:R3-BOOKCANON",
+    "R:R3-BOOKDISP",
+    "R:R4-PAGECERT",
+    "R:R4-MULTIBOOK",
+    "R:R4-DOUBLESTERILE",
+    "R:R4-PAGEFAMILY",
+    "R:R4-MULTIPLIER",
+    "R:R4-PAGECOMPACT",
+    "R:R4-TRICLOSE",
+    "R:R4-CENSUS"
+  ],
+  "passed": true,
+  "schema": "oracle.three-way-recursive-forge.hostile.v1",
+  "tests": {
+    "flagships_remain_open": true,
+    "forged_authority_downgraded": true,
+    "novelty_not_inferred": true,
+    "retraction_invalidates_descendants": true,
+    "semantic_duplicate_refused": true,
+    "source_tamper_detected": true,
+    "unknown_dependency_refused": true
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "modelRequested": "google/gemini-3.6-flash",
+  "fallbackAllowed": false,
+  "providerModelReturned": "google/gemini-3.6-flash",
+  "providerUsage": {
+    "prompt_tokens": 3470,
+    "completion_tokens": 6925,
+    "total_tokens": 10395,
+    "cost": 0.0571425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0571425,
+      "upstream_inference_prompt_cost": 0.005205,
+      "upstream_inference_completions_cost": 0.0519375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4851,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "providerResponseId": "gen-1785842941-8g3SRGhwdspgAThAz0tP",
+  "package": {
+    "compiler_id": "G1-COVERING-LIFT-V1",
+    "shape": "covering_design_witness",
+    "input_schema": "Verified C(v,k,t) covering design witness dictionary containing family, params (v, k, t), and blocks.",
+    "output_schema": "Lifted C(v+1,k+1,t) covering design witness dictionary containing family, params, blocks, provenance, and claimBoundary.",
+    "compiler_source": "import itertools\n\ndef compile_target(target: dict) -> dict:\n    if not isinstance(target, dict):\n        return {\"error\": \"Target must be a dict\", \"status\": \"refused\"}\n    if target.get(\"family\") != \"covering_design\":\n        return {\"error\": \"Invalid family\", \"status\": \"refused\"}\n    params = target.get(\"params\")\n    if not isinstance(params, dict):\n        return {\"error\": \"Missing params\", \"status\": \"refused\"}\n    v = params.get(\"v\")\n    k = params.get(\"k\")\n    t = params.get(\"t\")\n    if not (isinstance(v, int) and isinstance(k, int) and isinstance(t, int)):\n        return {\"error\": \"Params v, k, t must be integers\", \"status\": \"refused\"}\n    if not (v > k and k >= t and t >= 1):\n        return {\"error\": f\"Invalid params relationship v={v}, k={k}, t={t}\", \"status\": \"refused\"}\n    blocks = target.get(\"blocks\")\n    if not isinstance(blocks, list) or len(blocks) == 0:\n        return {\"error\": \"Missing or empty blocks\", \"status\": \"refused\"}\n    \n    new_v = v + 1\n    new_k = k + 1\n    new_t = t\n    new_blocks = []\n    \n    for b in blocks:\n        if not isinstance(b, list) or len(b) != k:\n            return {\"error\": \"Invalid block structure in target\", \"status\": \"refused\"}\n        if any(not isinstance(x, int) or x < 0 or x >= v for x in b):\n            return {\"error\": \"Block element out of range\", \"status\": \"refused\"}\n        if len(set(b)) != k:\n            return {\"error\": \"Block contains duplicates\", \"status\": \"refused\"}\n        new_blocks.append(sorted(b + [v]))\n        \n    return {\n        \"family\": \"covering_design\",\n        \"params\": {\n            \"v\": new_v,\n            \"k\": new_k,\n            \"t\": new_t\n        },\n        \"blocks\": new_blocks,\n        \"provenance\": {\n            \"compiler_id\": \"G1-COVERING-LIFT-V1\",\n            \"input_case_id\": target.get(\"caseId\", \"unknown\"),\n            \"transformation\": \"point_extension_v_plus_1\"\n        },\n        \"claimBoundary\": \"Constructive lifting of C(v,k,t) to C(v+1,k+1,t) preserving block count.\"\n    }\n",
+    "independent_verifier_source": "import itertools\n\ndef verify_compilation(source: dict, candidate: dict) -> dict:\n    errors = []\n    if not isinstance(candidate, dict):\n        return {\"passed\": False, \"errors\": [\"Candidate must be a dictionary\"]}\n    if candidate.get(\"family\") != \"covering_design\":\n        errors.append(\"Candidate family must be covering_design\")\n    \n    params = candidate.get(\"params\")\n    if not isinstance(params, dict):\n        errors.append(\"Candidate params missing or not dict\")\n        v_cand = k_cand = t_cand = None\n    else:\n        v_cand = params.get(\"v\")\n        k_cand = params.get(\"k\")\n        t_cand = params.get(\"t\")\n        if not (isinstance(v_cand, int) and isinstance(k_cand, int) and isinstance(t_cand, int)):\n            errors.append(\"v, k, t in candidate params must be integers\")\n        elif not (v_cand > k_cand and k_cand >= t_cand and t_cand >= 1):\n            errors.append(f\"Invalid candidate parameters: v={v_cand}, k={k_cand}, t={t_cand}\")\n            \n    if isinstance(source, dict) and isinstance(source.get(\"params\"), dict):\n        sp = source[\"params\"]\n        if isinstance(v_cand, int) and isinstance(sp.get(\"v\"), int) and v_cand <= sp[\"v\"]:\n            errors.append(\"Candidate v must be strictly greater than source v\")\n        if isinstance(k_cand, int) and isinstance(sp.get(\"k\"), int) and k_cand <= sp[\"k\"]:\n            errors.append(\"Candidate k must be strictly greater than source k\")\n        if isinstance(t_cand, int) and isinstance(sp.get(\"t\"), int) and t_cand != sp[\"t\"]:\n            errors.append(\"Candidate t must equal source t\")\n            \n    blocks = candidate.get(\"blocks\")\n    if not isinstance(blocks, list):\n        errors.append(\"Candidate blocks must be a list\")\n    else:\n        if isinstance(source, dict) and isinstance(source.get(\"blocks\"), list):\n            if len(blocks) != len(source[\"blocks\"]):\n                errors.append(f\"Block count mismatch: candidate has {len(blocks)}, source has {len(source['blocks'])}\")\n        if isinstance(v_cand, int) and isinstance(k_cand, int) and isinstance(t_cand, int) and not errors:\n            block_sets = []\n            for idx, b in enumerate(blocks):\n                if not isinstance(b, list):\n                    errors.append(f\"Block {idx} is not a list\")\n                    continue\n                if len(b) != k_cand:\n                    errors.append(f\"Block {idx} length is {len(b)}, expected {k_cand}\")\n                if len(set(b)) != len(b):\n                    errors.append(f\"Block {idx} contains duplicate elements\")\n                for elem in b:\n                    if not isinstance(elem, int) or elem < 0 or elem >= v_cand:\n                        errors.append(f\"Block {idx} element {elem} out of range [0, {v_cand - 1}]\")\n                block_sets.append(set(b))\n            if not errors:\n                uncovered = []\n                for t_tuple in itertools.combinations(range(v_cand), t_cand):\n                    t_set = set(t_tuple)\n                    if not any(t_set.issubset(bs) for bs in block_sets):\n                        uncovered.append(t_tuple)\n                        if len(uncovered) >= 3:\n                            break\n                if uncovered:\n                    errors.append(f\"Uncovered {t_cand}-subsets found, e.g. {uncovered}\")\n                    \n    return {\"passed\": len(errors) == 0, \"errors\": errors}\n",
+    "train_case_ids": [
+      "train-C-4-3-2",
+      "train-C-5-3-2",
+      "train-C-5-4-3",
+      "train-C-6-4-2",
+      "train-C-6-5-3"
+    ],
+    "heldout_expected_contract": "Given any valid C(v,k,t) covering design witness from heldout split, compiles a valid C(v+1,k+1,t) covering design witness with identical block count.",
+    "claim_boundary": "Constructively proves that if C(v,k,t) has a covering design of size b, then C(v+1,k+1,t) has a covering design of size at most b, witnessed by appending point v to all blocks.",
+    "stop_conditions": [
+      "Input target is not a dictionary or missing required keys.",
+      "Family is not 'covering_design'.",
+      "Params v, k, t are missing or fail v > k >= t >= 1 constraint.",
+      "Blocks list is empty, malformed, or contains elements out of range [0, v-1]."
+    ]
+  }
+}

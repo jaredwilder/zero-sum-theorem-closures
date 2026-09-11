@@ -1,0 +1,127 @@
+{
+  "build_complete": true,
+  "conditional_or_search": 11,
+  "content_hash": "e9f111eda6370385630b6c5392b4860e6250707eb5e70da1b1fcc8b6a119e94b",
+  "control_claims": 9,
+  "exact_packet_proofs": 21,
+  "files": {
+    "ATTACK-QUEUE.json": {
+      "bytes": 4859,
+      "sha256": "3abb8b82bdc2509575b4cbd52a0136db7611e096088e48145d88992f4072266e"
+    },
+    "BACK-TRANSFER-QUEUE.json": {
+      "bytes": 17469,
+      "sha256": "08523b3b8a3e93d72f0c1e97fa2b466d359b5b8cb4519453b8a7d63a23c4d060"
+    },
+    "CAUSAL-ABLATION.json": {
+      "bytes": 579,
+      "sha256": "06a5d37dd6858d807ebd2df0f8c50063031a29c6a2702d3e1e782b2dc7ee3b74"
+    },
+    "CLEAN-PROCESS-REPLAY.json": {
+      "bytes": 741,
+      "sha256": "22bc609aed8620a99ed6f403f4f0ba432b89bb13262b0b800e48e9fd7a556e06"
+    },
+    "CLOSE-PROGRAMS.json": {
+      "bytes": 1003,
+      "sha256": "0740ae049c45f8d1af7573acc8b6c895a747d435b32d51872b679a0cae580da6"
+    },
+    "CONTROL-SUMMARY.json": {
+      "bytes": 3493,
+      "sha256": "4ad9447856427bca8e201d740b0c679d57a6c082b440f875526a145411c99d67"
+    },
+    "FINAL-VERIFICATION.json": {
+      "bytes": 1367,
+      "sha256": "3fe51bd1389cea8edad513e7ca866b57059b2267c3012c74c36705b4570f3bcd"
+    },
+    "FINITE-MATH-VERIFICATION.json": {
+      "bytes": 595,
+      "sha256": "59b1bce34212b7ef6fee47b26b36123b3c29e7932c5ae148ba9a270c0eb42072"
+    },
+    "HOSTILE-VERIFICATION.json": {
+      "bytes": 767,
+      "sha256": "f8c7907d7bf9f760d010c6c14ce9a1a58b67b74e568ff2f0bd492e9b2367da9f"
+    },
+    "LEAN-MISSIONS.jsonl": {
+      "bytes": 20500,
+      "sha256": "171e8d68e1e67da1b93a6e344c0720c5ba01aed5eed9ff7828657477b65dc5f8"
+    },
+    "MANIFEST.json": {
+      "bytes": 7926,
+      "sha256": "348c73c7e1b60c6c36c1986a90db6a444cf6aee20c8d56c87a05227470331403"
+    },
+    "NOVELTY-MISSIONS.jsonl": {
+      "bytes": 17132,
+      "sha256": "b5b845af4bde07295faf9227974bef414a1ffe72119c6970c6713c6786a9db61"
+    },
+    "PROVE-SYSTEM-RECEIPT.txt": {
+      "bytes": 3003,
+      "sha256": "58b261b719398880c3cdf7dd03c68f19a2078b427b9802e71b079f93752f7e76"
+    },
+    "RECURSIVE-THEOREM-BANK.md": {
+      "bytes": 35265,
+      "sha256": "502ac56c3e51808f5d32277baf2518a3f8f4e4781a544f213cbf3e459c8eb4ef"
+    },
+    "RECURSIVE-THEOREM-CARDS.jsonl": {
+      "bytes": 37996,
+      "sha256": "065861f00c948e7d80352da772c56e0898e013318652c9cce131da74db5af36a"
+    },
+    "REPLAY-VERIFICATION.json": {
+      "bytes": 284,
+      "sha256": "886c141c58ccbe6a41be397dd4c6b31eb69a0ec13855ebb7d628cf52a24cc79e"
+    },
+    "ROUND-RECEIPTS.json": {
+      "bytes": 2676,
+      "sha256": "bd7d476cba7c8c089f406a712224125ba12eb03203dec9aa62b8d59240273e42"
+    },
+    "RUNBOOK.md": {
+      "bytes": 1817,
+      "sha256": "c1d8e719d92236e863c052b90d40710361e55d2ea163e09d97fcfbd194749369"
+    },
+    "THREE-WAY-RECURSIVE-THEOREM-FORGE-REPORT.md": {
+      "bytes": 14722,
+      "sha256": "1ba2c9c1ed5e5310ad6b1efa8bdbf13a410a3c0d067d79b1b072d968a688a367"
+    },
+    "TREATMENT-SUMMARY.json": {
+      "bytes": 4349,
+      "sha256": "6a513451f6a250b750707cd8ea723f906203caad325d52930cb63be4b06e02b3"
+    },
+    "UNIFIED-CLAIM-BANK.jsonl": {
+      "bytes": 161675,
+      "sha256": "b02671c95fd2f9a93062118fa070725ebb347bd8790b331440b7da2ae3b30eda"
+    },
+    "UNIT-TEST-RECEIPT.txt": {
+      "bytes": 1373,
+      "sha256": "433a217694f168a86f84651b699c07c4e60196596b1e93150f39aceac4a1d431"
+    },
+    "materialize_outputs.py": {
+      "bytes": 4006,
+      "sha256": "806dbb23747c21bf5a4ec1a0f991f38c3d954f3485eb21d5f24094d0a6b19334"
+    },
+    "prove_system.sh": {
+      "bytes": 529,
+      "sha256": "2b48da5730c1d142065f71eb935ccc85295a570f35b876649a9bf8abc3603ef0"
+    },
+    "test_three_way_forge.py": {
+      "bytes": 4112,
+      "sha256": "7e68a59d21fc15a06a1eec6e41f377b3f505a6c7cada8f0a193caec4357ad924"
+    },
+    "three_way_forge.py": {
+      "bytes": 55251,
+      "sha256": "b4d4070b9defd483d9bce174e92d91a0c27dba9a5c4bac108738c9c7c37fd139"
+    },
+    "verify_three_way_forge.py": {
+      "bytes": 21681,
+      "sha256": "38ee51c9a543cb158c5cccc30c376721c90fbb7fef5e23fdab95eff621630d10"
+    }
+  },
+  "finite_assertions": 35502,
+  "flagship_closed": false,
+  "lean_executed": false,
+  "novelty_claimed": false,
+  "parsed_claims": 174,
+  "proof_suite_passed": true,
+  "recursive_claims": 32,
+  "recursive_gain": 23,
+  "schema": "oracle.three-way-recursive-forge.delivery-manifest.v1",
+  "unit_tests": 12
+}

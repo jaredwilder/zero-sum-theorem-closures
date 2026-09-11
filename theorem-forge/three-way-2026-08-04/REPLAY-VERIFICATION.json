@@ -1,0 +1,7 @@
+{
+  "generated_count": 32,
+  "generated_hash": "52fcba7b22f85888a9ce6898a458eeaae7006320f7d7739292829388e7701492",
+  "passed": true,
+  "round_receipt_hash": "e75077f197d4f8c4c036b71053b4bc5e4b77db95ee463df0457c1605b0193fae",
+  "schema": "oracle.three-way-recursive-forge.replay.v1"
+}

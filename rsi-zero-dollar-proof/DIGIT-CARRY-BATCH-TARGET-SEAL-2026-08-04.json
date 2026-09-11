@@ -1,0 +1,26 @@
+{
+  "schema": "oracle.rsi-zero-dollar-digit-batch-target-seal.v1",
+  "sealedBeforeExecution": true,
+  "selectionRule": "Take SHA-256(techniqueRegistrySha || 'zero-dollar-rsi-digit-batch-v1' || counter), derive three signed coefficients of magnitude 1..4, set the fourth to minus their sum, require nonzero fourth coefficient of magnitude at most 7, canonicalize by gcd/sign/permutation, reject prior digit-transfer signatures and duplicates, and retain the first eight classes.",
+  "techniqueRegistrySha256": "sha256:84e077de54dd90772ff9d34f8009778197bf6a2387067e51be5383d89ee56485",
+  "semantics": "zero-rhs relation on pairwise-distinct arbitrary ordered tuples",
+  "baseRange": [3, 8],
+  "normalization": "digit alphabets contain 0; translation invariance makes this exhaustive up to digit translation",
+  "coefficientClasses": [
+    [-7, 1, 2, 4],
+    [-3, 1, 1, 1],
+    [-4, -1, 2, 3],
+    [-3, -2, 2, 3],
+    [-1, -1, 1, 1],
+    [-3, -1, 2, 2],
+    [-6, 1, 2, 3],
+    [-7, 1, 3, 3]
+  ],
+  "bankedTechniques": [
+    "T-GOLD-OCG-049",
+    "T-WEIRD-OWR-029",
+    "T-WEIRD-OWR-036",
+    "T-WEIRD-OWR-048"
+  ],
+  "noOutcomeBasedTargetSelection": true
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "oracle.local-rsi-closure-independent-verification.v1",
+  "createdUtc": "2026-08-04T11:32:30.644699+00:00",
+  "verdict": "LOCAL_TYPED_CLOSURE_INDEPENDENTLY_VERIFIED",
+  "passed": true,
+  "producerReceiptHash": "sha256:cc39868906d1836d4df217cc1939997ecd664ce0de7559a9b9e96cdb68429356",
+  "artifactBankSha256": "sha256:7dcaccf695c59611f38b466848a68796935d53621b626e2fcd3863c3e6d55574",
+  "checks": [
+    {
+      "name": "receipt_hash",
+      "passed": true
+    },
+    {
+      "name": "artifact_bank_hash",
+      "passed": true
+    },
+    {
+      "name": "artifact_hashes",
+      "passed": true,
+      "count": 889
+    },
+    {
+      "name": "semantic_deduplication",
+      "passed": true
+    },
+    {
+      "name": "parent_generation_order",
+      "passed": true
+    },
+    {
+      "name": "independent_mathematical_replay",
+      "passed": true,
+      "carryTheoremsChecked": 50,
+      "directAssignmentsChecked": 10528320
+    },
+    {
+      "name": "deterministic_derivations",
+      "passed": true
+    },
+    {
+      "name": "typed_fixed_point_complete",
+      "passed": true,
+      "missingOrExtra": []
+    },
+    {
+      "name": "receipt_counts",
+      "passed": true
+    },
+    {
+      "name": "zero_external_boundary",
+      "passed": true
+    }
+  ],
+  "artifactCount": 889,
+  "directAssignmentsChecked": 10528320,
+  "carryTheoremsChecked": 50,
+  "seconds": 8.215969,
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "paidCalls": 0,
+  "costUsd": 0.0,
+  "verificationReceiptHash": "sha256:e0d4b020c957f0baa9b67f402c8f92a2b1eea23239c55975dca1e582617066d5"
+}

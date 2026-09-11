@@ -1,0 +1,17 @@
+test_artifacts_exist (test_three_way_forge.ThreeWayForgeTests.test_artifacts_exist) ... ok
+test_back_transfer_all_hybrid (test_three_way_forge.ThreeWayForgeTests.test_back_transfer_all_hybrid) ... ok
+test_close_programs_remain_open (test_three_way_forge.ThreeWayForgeTests.test_close_programs_remain_open) ... ok
+test_control_is_weaker (test_three_way_forge.ThreeWayForgeTests.test_control_is_weaker) ... ok
+test_duplicate_semantic_statement_refused (test_three_way_forge.ThreeWayForgeTests.test_duplicate_semantic_statement_refused) ... ok
+test_exact_authority_requires_exact_dependencies (test_three_way_forge.ThreeWayForgeTests.test_exact_authority_requires_exact_dependencies) ... ok
+test_novelty_unrun (test_three_way_forge.ThreeWayForgeTests.test_novelty_unrun) ... ok
+test_recursive_count (test_three_way_forge.ThreeWayForgeTests.test_recursive_count) ... ok
+test_retraction_propagates (test_three_way_forge.ThreeWayForgeTests.test_retraction_propagates) ... ok
+test_semantic_hashes_unique (test_three_way_forge.ThreeWayForgeTests.test_semantic_hashes_unique) ... ok
+test_source_counts (test_three_way_forge.ThreeWayForgeTests.test_source_counts) ... ok
+test_unknown_dependency_refused (test_three_way_forge.ThreeWayForgeTests.test_unknown_dependency_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.027s
+
+OK

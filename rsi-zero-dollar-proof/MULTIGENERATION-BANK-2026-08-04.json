@@ -1,0 +1,24 @@
+{
+  "schema": "oracle.rsi-multigeneration-bank.v1",
+  "createdUtc": "2026-08-04T10:48:47.443830+00:00",
+  "verdict": "CAPABILITIES_BANKED",
+  "passed": true,
+  "techniqueIds": [
+    "T-RSI-ZERO-FINITE-MATERIALIZER-001",
+    "T-RSI-ZERO-AFFINE-TRANSFER-001"
+  ],
+  "registryWrite": {
+    "path": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\ledger\\technique-registry.json",
+    "key": "techniques",
+    "ids_before": 6808,
+    "ids_after": 6810,
+    "added": 2,
+    "dropped": []
+  },
+  "producerReceiptHash": "sha256:9a943c9e79bd04abf517793d186d0c6ccab71c749a870c69ec75e24ea0d58084",
+  "verificationReceiptHash": "sha256:0ee87c920aaf065126ac330c6e5cf52f309045d2238848eb554114f921bade25",
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "paidCalls": 0,
+  "costUsd": 0.0
+}
