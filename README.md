@@ -1,60 +1,63 @@
-# Finite theorem closure and zero-sum derivations
+# Finite zero-sum derivation system
 
-A finite derivation system starting from **27 seed statements** reaches a fixed point after **7 generations**, producing **889 typed theorems**. The complete closure was independently re-executed and checked by direct computation.
+A finite mathematical derivation system seeded by 27 statements and closed under an explicit set of rules. Exhaustive iteration reaches a fixed point after seven generations with **889 distinct typed statements**.
 
-Author: Jared Wilder. First public timestamp: 2026-09-10. Work dated 2026-08-04.
+## Closure size
 
-## The 889-theorem closure
+[`rsi-local-closure/final-receipt.json`](rsi-local-closure/final-receipt.json) records:
 
-`rsi-local-closure/final-receipt.json` records the fixed point:
-
-| | |
+| quantity | value |
 |---|---:|
-| seeds | 27 |
-| generations | 7 |
-| final theorem count | **889** |
+| seed statements | 27 |
+| generations to fixed point | 7 |
+| final statements | **889** |
 | newly derived | 862 |
-| growth by generation | 128, 176, 176, ... then no new statements |
 
-By type, the closure includes 151 affine-orbit theorems, 50 all-length-digit theorems, 25 coefficient-orbit theorems, 7 best-density statements, and further families. “Saturated” here has a precise finite meaning: applying the declared derivation rules again at generation 8 produced nothing new.
+The theorem families include affine-orbit identities, coefficient orbits, all-length digit statements, density comparisons, and other finite consequences of the declared seed/rule system.
+
+“Fixed point” has its literal finite meaning here: running the same derivation rules once more produces no new statement.
 
 ## Independent replay
 
-`rsi-local-closure/independent-verification.json` records a deterministic re-execution of the closure:
+[`rsi-local-closure/independent-verification.json`](rsi-local-closure/independent-verification.json) records a deterministic reconstruction of the closure.
 
-- **10,528,320 direct assignments checked**;
-- 50 carry theorems checked;
-- receipt hash, theorem-bank hash, and every individual artifact hash re-verified;
-- the verification used no language-model calls.
+The replay checks:
 
-The important point is reproducibility: the theorem bank can be regenerated and checked from its explicit rules and inputs rather than accepted on review alone.
+- **10,528,320 direct assignments**;
+- 50 carry statements;
+- the theorem-bank digest;
+- every individual artifact hash;
+- generation-by-generation closure counts.
 
-## A large derived certificate
+The 889-object bank can therefore be regenerated from the explicit seeds and rules rather than trusted as a static archive.
 
-`rsi-zero-dollar-proof/` contains a multigeneration reuse certificate, including an order-7 Pascal-derived coefficient vector
+## Large derived certificate
 
-`[231, −77, −385, 385, 77, 11, −11, −231]`
+`rsi-zero-dollar-proof/` contains a multigeneration certificate built around the order-7 Pascal-derived coefficient vector
 
-over a domain extending to `76,686,282,021,340,161`, together with a Lean receipt for a **Sidon digit obstruction**.
+\[
+[231,-77,-385,385,77,11,-11,-231]
+\]
 
-Each derived object records its scale, permutation, and SHA-256 parentage so the derivation history can be replayed.
+on a domain extending to
 
-## Erdős 595 and 738 theorem bank
+\[
+76{,}686{,}282{,}021{,}340{,}161.
+\]
 
-`theorem-forge/three-way-2026-08-04/` contains 32 derived theorems from 174 source claims, unified to 206 statements after back-transfers, plus seven high-leverage rules prepared for Lean formalization.
+The package records the scale, coordinate permutation, parent statements, and SHA-256 lineage of each derived object. It also includes a Lean receipt for a Sidon digit obstruction.
 
-Statements proved in the packet and still-open checkable targets are kept in separate classes.
+## Additional finite mathematics
 
-## Erdős 1038 finite optimization work
+The repository also contains separate research packages:
 
-`erdos1038/` contains 47 receipts from LP minimization, growth and cusp analysis, variation profiles, and self-similarity computations. Each result is tied to its stated parameter range.
+- `theorem-forge/three-way-2026-08-04/` — 32 derived statements from a 174-claim Erdős #595/#738 source bank, with back-transfers producing 206 indexed statements;
+- `erdos1038/` — 47 finite optimization and self-similarity receipts tied to explicit parameter ranges.
+
+The focused mathematical homes for the #595 and #738 programs are [`triangle-cover-number`](https://github.com/jaredwilder/triangle-cover-number), [`erdos595-barrier-tower`](https://github.com/jaredwilder/erdos595-barrier-tower), and [`erdos738-triangle-free-induced-trees`](https://github.com/jaredwilder/erdos738-triangle-free-induced-trees).
 
 ## Scope
 
-The **889-theorem headline concerns the complete closure of one finite typed derivation system under its declared rules**. The statements are consequences of the supplied seeds; the mathematical contribution is the exhaustive closure and its reproducible derivation structure.
+The headline result is exhaustive closure of one finite typed derivation system under its stated rules. It does not mean that every statement is historically novel or that a larger open problem is solved by the count itself.
 
-The Erdős 595, 738, and 1038 material is separate and carries its own statement-by-statement evidence.
-
-## License
-
-Apache-2.0.
+Author: Jared Wilder. License: Apache-2.0.
